@@ -8,6 +8,30 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
+    <string name="menu_formulario">Formulario</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="cuenta_con_experiencia_laboral">¿Cuenta con experiencia laboral?</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="que_tipo_de_discapacidad_tiene">¿Que tipo de discapacidad tiene?</string>
+    <string name="visual">Visual</string>
+    <string name="auditiva">Auditiva</string>
+    <string name="f_sico">Físico</string>
+    <string name="m_ltiple">Múltiple</string>
+    <string name="grado_de_discapacidad">Grado de discapacidad</string>
+    <string name="alta">Alta</string>
+    <string name="media">Media</string>
+    <string name="baja">Baja</string>
+    <string name="en_que_rango_de_edad_se_encuentra">¿En que rango de edad se encuentra?</string>
+    <string name="_18_24">18 - 24</string>
+    <string name="_25_30">25 - 30</string>
+    <string name="_31_35">31 - 35</string>
+    <string name="_36_o_m_s">36 o más</string>
+    <string name="cual_es_su_ultimo_nivel_de_escolaridad">¿Cual es su ultimo nivel de escolaridad?</string>
+    <string name="b_sica_primaria">Básica primaria</string>
+    <string name="b_sica_secundaria">Básica secundaria</string>
+    <string name="profesional_t_cnica">Profesional técnica</string>
+    <string name="postgrado">Postgrado</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="enviar">Enviar</string>
 </resources>

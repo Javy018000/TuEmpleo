@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "207986345630",
+    "project_id": "tuempleo-364220",
+    "storage_bucket": "tuempleo-364220.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207986345630:android:f4c9cbe975168b1c325d8f",
+        "android_client_info": {
+          "package_name": "com.example.tuempleo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "207986345630-23cg9sogm0j72cob3tv4v43v417vk0ce.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tuempleo",
+            "certificate_hash": "631a56cd148d0ad5bade44315ef6c2007148c2c8"
+          }
+        },
+        {
+          "client_id": "207986345630-2un464dt4hcjm16gg1itfvpvns4iif1p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUvssz1N1OxJV60cvN_bxlx7D-CrWpwus"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "207986345630-2un464dt4hcjm16gg1itfvpvns4iif1p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
