@@ -38,4 +38,9 @@
         android:name="com.example.tuempleo.repertorio"
         android:label="fragment_repertorio"
         tools:layout="@layout/fragment_repertorio" />
+    <activity
+        android:id="@+id/formulario"
+        android:name="com.example.tuempleo.Formulario"
+        android:label="activity_formulario"
+        tools:layout="@layout/activity_formulario" />
 </navigation>
