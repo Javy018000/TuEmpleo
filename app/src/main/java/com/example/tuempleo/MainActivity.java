@@ -21,7 +21,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.tuempleo.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-    TextView textView;
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
 
@@ -46,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,R.id.aboutFragment,R.id.loginFragment,R.id.repertorioFragment)
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,R.id.aboutFragment,R.id.loginFragment,R.id.repertorioFragment, R.id.formulario)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);

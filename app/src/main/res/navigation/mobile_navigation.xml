@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.tuempleo.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:label="@string/lb_titulo_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
@@ -25,22 +25,22 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.tuempleo.ui.login.LoginFragment"
-        android:label="fragment_login"
+        android:label="@string/lb_titulo_login"
         tools:layout="@layout/fragment_login" />
 
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.example.tuempleo.About"
-        android:label="fragment_about"
+        android:label="@string/lb_titulo_about"
         tools:layout="@layout/fragment_about" />
     <fragment
         android:id="@+id/repertorioFragment"
         android:name="com.example.tuempleo.repertorio"
-        android:label="fragment_repertorio"
+        android:label="@string/lb_titulo_mprincipal"
         tools:layout="@layout/fragment_repertorio" />
     <activity
         android:id="@+id/formulario"
         android:name="com.example.tuempleo.Formulario"
-        android:label="activity_formulario"
+        android:label="@string/lb_titulo_formulario"
         tools:layout="@layout/activity_formulario" />
 </navigation>

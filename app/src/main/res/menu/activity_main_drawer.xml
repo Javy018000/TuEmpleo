@@ -7,24 +7,23 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/app_bar_search"
-            android:icon="@drawable/ic_launcher_foreground"
             android:title="Search"
             app:actionViewClass="android.widget.SearchView" />
         <item
             android:id="@+id/repertorioFragment"
-            android:icon="@drawable/ic_launcher_foreground"
+            android:icon="@drawable/ic_menu_book_fachero"
             android:title="Menu Principal" />
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_home_fachero"
             android:title="@string/menu_home" />
         <item
             android:id="@+id/formulario"
-            android:icon="@drawable/ic_launcher_foreground"
-            android:title="Login" />
+            android:icon="@drawable/ic_formulario_fachero"
+            android:title="Formulario" />
         <item
             android:id="@+id/aboutFragment"
-            android:icon="@drawable/ic_launcher_foreground"
+            android:icon="@drawable/ic_info_fachero"
             android:title="About us" />
         <item
             android:id="@+id/nav_gallery"
@@ -40,7 +39,7 @@
     <group android:checkableBehavior="single">
      <item
         android:id="@+id/loginFragment"
-        android:icon="@drawable/ic_launcher_foreground"
+        android:icon="@drawable/ic_login_fachero"
         android:title="Login" />  </group>
 
 </menu>
