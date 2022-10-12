@@ -7,7 +7,29 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
+    <string name="menu_home">INICIO</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Correo</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in">Iniciar Sesion o registrarse</string>
+    <string name="action_sign_in_short">Iniciar Sesion</string>
+    <string name="welcome">"Bienbenido!"</string>
+    <string name="invalid_username">Nombre de usuario no valido</string>
+    <string name="invalid_password">La contraseña debe tener almenos 5 caracteres</string>
+    <string name="login_failed">"Ingreso Fallido"</string>
+
+    //label titulos
+    <string name="lb_titulo_mprincipal">Menu Principal</string>
+    <string name="lb_titulo_about">A cerca de</string>
+    <string name="lb_titulo_formulario">Formulario</string>
+    <string name="lb_titulo_home">Inicio</string>
+    <string name="lb_titulo_login">Iniciar sesión</string>
+    <string name="lb_titulo_report">Reporte</string>
+
 </resources>

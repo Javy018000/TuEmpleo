@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.tuempleo.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:label="@string/lb_titulo_mprincipal"
         tools:layout="@layout/fragment_home" />
 
     <fragment
@@ -22,4 +22,34 @@
         android:name="com.example.tuempleo.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/fragment_about"
+        android:name="com.example.tuempleo.fragment_about"
+        android:label="@string/lb_titulo_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/repertorioFragment"
+        android:name="com.example.tuempleo.RepertorioFragment"
+        android:label="@string/lb_titulo_mprincipal"
+        tools:layout="@layout/fragment_repertorio" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.tuempleo.ui.login.LoginFragment"
+        android:label="@string/lb_titulo_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/formularioFragment"
+        android:name="com.example.tuempleo.FormularioFragment"
+        android:label="@string/lb_titulo_formulario"
+        tools:layout="@layout/fragment_formulario" />
+    <fragment
+        android:id="@+id/reporteFragment"
+        android:name="com.example.tuempleo.ReporteFragment"
+        android:label="@string/lb_titulo_report"
+        tools:layout="@layout/fragment_reporte" />
+    <fragment
+        android:id="@+id/reporte2Fragment"
+        android:name="com.example.tuempleo.Reporte2Fragment"
+        android:label="fragment_reporte2"
+        tools:layout="@layout/fragment_reporte2" />
 </navigation>
