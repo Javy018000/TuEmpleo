@@ -52,4 +52,9 @@
         android:name="com.example.tuempleo.Reporte2Fragment"
         android:label="fragment_reporte2"
         tools:layout="@layout/fragment_reporte2" />
+    <fragment
+        android:id="@+id/translateFragment"
+        android:name="com.example.tuempleo.TranslateFragment"
+        android:label="fragment_translate"
+        tools:layout="@layout/fragment_translate" />
 </navigation>

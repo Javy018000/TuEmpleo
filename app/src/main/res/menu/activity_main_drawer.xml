@@ -27,6 +27,10 @@
             android:icon="@drawable/ic_chart_fachero"
             android:title="@string/lb_titulo_report" />
         <item
+            android:id="@+id/translateFragment"
+            android:icon="@drawable/ic_baseline_translate_24"
+            android:title="@string/st_traductor" />
+        <item
             android:id="@+id/fragment_about"
             android:icon="@drawable/ic_info_fachero"
             android:title="@string/lb_titulo_about" />
