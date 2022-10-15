@@ -57,4 +57,14 @@
         android:name="com.example.tuempleo.TranslateFragment"
         android:label="fragment_translate"
         tools:layout="@layout/fragment_translate" />
+    <activity
+        android:id="@+id/traducActivity"
+        android:name="com.example.tuempleo.TraducActivity"
+        android:label="activity_traduc"
+        tools:layout="@layout/activity_traduc" />
+    <activity
+        android:id="@+id/trActivity"
+        android:name="com.example.tuempleo.TrActivity"
+        android:label="activity_tr"
+        tools:layout="@layout/activity_tr" />
 </navigation>

@@ -3,8 +3,6 @@
     <string name="app_name">YourJob</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
@@ -26,7 +24,7 @@
     <string name="login_failed">YourJob</string>
 
     //label titulos
-    <string name="lb_titulo_mprincipal">Menu Principal</string>
+    <string name="lb_titulo_mprincipal">Principal Menu</string>
     <string name="lb_titulo_about">About us</string>
     <string name="lb_titulo_formulario">Form</string>
     <string name="lb_titulo_home">Home</string>
@@ -39,4 +37,52 @@
     //mensajes prueba
     <string name="ms_select">Choose a lenguage</string>
     <string name="ms_prueba">This is a test message</string>
+    <string name="greet">This is a test message</string>
+
+    //mensajes home
+    <string name="blogs">Blogs</string>
+    <string name="article_name1">Labor inclusion of people with disabilities in the technology sector</string>
+    <string name="article_name2">Cognitive Accessibility</string>
+    <string name="text_teaser1">The labor inclusion of people with disabilities in the technology sector is an alternative to reduce the labor exclusion gap to which this population is subjected...</string>
+    <string name="data_published2">13/August</string>
+    <string name="text_teaser2">Contributing to creating easy and accessible environments and documents for everyone is one of the goals... we adapt documents to easy reading...</string>
+    <string name="selection_title1">TML and CSS</string>
+    <string name="this_is_a_title">Certifications by Google</string>
+    <string name="this_is_a_description1">This is good news that will please many professionals who are dedicated to the area of ​​design, development and content writing for web...</string>
+    <string name="selection_title2">Electronic Commerce</string>
+    <string name="this_is_a_description2">Today I am pleased to announce the launch of a diploma course designed by the School of Industrial Organization and developed in collaboration...</string>
+    <string name="selection_title3">Digital marketing</string>
+    <string name="this_is_a_description3">Google has developed a comprehensive 40-hour course dedicated to marketing and sales strategies...</string>
+    <string name="dec_butom">This is a blog that provides information on types of disabilities to enter click on the button</string>
+    <string name="this_is_a_title2">Know the different types of disability</string>
+    <string name="team">Team</string>
+    <string name="team_dec">This work is thanks to</string>
+    <string name="name_desc1">Scrum Master</string>
+    <string name="name_desc2">Product Owner</string>
+    <string name="name_desc3">Scrum Team</string>
+    <string name="saludo">Welcome</string>
+    <string name="ques_1">What type of disability do you have?</string>
+    <string name="rt_1_q_1">Visual</string>
+    <string name="tr_2_q_1">Auditory</string>
+    <string name="tr_3_q_1">Physical</string>
+    <string name="tr_4_q_1">Multiple</string>
+    <string name="tr_5_q_1">Other</string>
+    <string name="ques_2">Grade of Discapacity</string>
+    <string name="tr_1_q_2">High</string>
+    <string name="tr_2_q_2">Half</string>
+    <string name="tr_3_q_2">Short</string>
+
+    <string name="ques_3">¿En que rango de edad se encuentra?</string>
+    <string name="tr_4_q_3">36 or more</string>
+    <string name="ques_4">What is your last level of schooling?</string>
+    <string name="tr_2_q_4">Basic Secundary</string>
+    <string name="tr_1_q4">" Basic Primary"</string>
+    <string name="tr_3_q_4">technical professional</string>
+    <string name="ques_5">Do you have work experience?</string>
+    <string name="tr_5_q_4">" Postgraduate"</string>
+    <string name="tr_1_q_5">Yes</string>
+    <string name="tr_2_q_5">No</string>
+    <string name="lb_contact">" Contact us"</string>
+    <string name="lb_titulo_singup">Sing in</string>
+    <string name="data_published1">22/September</string>
 </resources>

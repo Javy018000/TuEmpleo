@@ -1,9 +1,8 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">TuEmpleo</string>
     <string name="navigation_drawer_open">Abrir navigation drawer</string>
     <string name="navigation_drawer_close">Cerrar navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Opciones</string>
 
@@ -15,17 +14,15 @@
 
 
     <!-- Strings related to login -->
-    <string name="prompt_email">Correo</string>
     <string name="prompt_password">Contraseña</string>
-    <string name="action_sign_in">Iniciar Sesion o registrarse</string>
-    <string name="action_sign_in_short">Iniciar Sesion</string>
-    <string name="welcome">"Bienbenido!"</string>
-    <string name="invalid_username">Nombre de usuario no valido</string>
-    <string name="invalid_password">La contraseña debe tener al menos 5 caracteres</string>
+    <string name="action_sign_in">Iniciar Sesión o registrarse</string>
+    <string name="action_sign_in_short">Iniciar Sesión</string>
+    <string name="welcome">Bienvenido!</string>
+    <string name="invalid_username">Nombre de usuario no válido</string>
     <string name="login_failed">TuEmpleo</string>
 
     //label titulos
-    <string name="lb_titulo_mprincipal">Menu Principal</string>
+    <string name="lb_titulo_mprincipal">Menú Principal</string>
     <string name="lb_titulo_about">A cerca de</string>
     <string name="lb_titulo_formulario">Formulario</string>
     <string name="lb_titulo_home">Inicio</string>
@@ -37,5 +34,63 @@
 
     //mensajes prueba
     <string name="ms_select">Seleccione un idioma</string>
+    <string name="greet">Este es un mensaje de prueba</string>
+
+    //mensajes home
+    <string name="blogs">Blogs</string>
+    <string name="data_published1">22/Septiembre</string>
+    <string name="article_name2">Accesibilidad Cognitiva</string>
+    <string name="text_teaser1">La inclusión laboral de personas con discapacidad en el sector tecnológico es una alternativa para disminuir la brecha de exclusión laboral a la que está sometida esta población...</string>
+    <string name="data_published2">13/Agosto</string>
+    <string name="text_teaser2">Contribuir a crear entornos y documentos fáciles y accesibles para todas las personas es una de las metas … adaptamos documentos a lectura fácil...</string>
+    <string name="this_is_a_title">Certificaciones por Google</string>
+    <string name="selection_title1">TML y CSS</string>
+    <string name="this_is_a_description1">Esta es una buena noticia que alegrará a muchos profesionales que se dedican al área del diseño, desarrollo y redacción de contenidos para web...</string>
+    <string name="selection_title2">Comercio Electrónico</string>
+    <string name="this_is_a_description2">Hoy me complace anunciar el lanzamiento de un curso-diploma diseñado por la Escuela de Organización Industrial y desarrollado en colaboración...</string>
+    <string name="selection_title3">Marketing Digital</string>
+    <string name="this_is_a_description3">Google ha elaborado un completísimo curso de 40 horas de duración abocado al marketing y las estrategias de ventas...</string>
+    <string name="dec_butom">Este es un blog que provee información de tipos de discapacidades para ingresar has clic en el boton</string>
+    <string name="team">Equipo</string>
+    <string name="name1" translatable="false">Javier Andres Ramirez Zabaleta</string>
+    <string name="name2" translatable="false">Oscar Julian Hernandez Bonilla</string>
+    <string name="name_desc1">Scrum Master</string>
+    <string name="name_desc2">Product Owner</string>
+    <string name="name3" translatable="false">Esteban Perdomo Buitrago</string>
+    <string name="name_desc3">Scrum Team</string>
+    <string name="saludo">Bienvenido</string>
+    <string name="ques_1">¿Que tipo de discapacidad tiene?</string>
+    <string name="rt_1_q_1">Visual</string>
+    <string name="tr_2_q_1">Auditiva</string>
+    <string name="tr_3_q_1">Física</string>
+    <string name="tr_4_q_1">Múltiple</string>
+    <string name="tr_5_q_1">Otra</string>
+    <string name="ques_2">Grado de discapacidad</string>
+    <string name="tr_1_q_2">Alta</string>
+    <string name="tr_2_q_2">Media</string>
+    <string name="tr_3_q_2">Baja</string>
+    <string name="ques_3">¿En que rango de edad se encuentra?</string>
+    <string name="tr_1_q_3" translatable="false">18 - 24</string>g>
+    <string name="tr_2_q_3" translatable="false">25 - 30</string>
+    <string name="tr_3_q_3" translatable="false">31 - 35</string>
+    <string name="tr_4_q_3">36 o más</string>
+    <string name="ques_4">¿Cual es su ultimo nivel de escolaridad?</string>
+    <string name="tr_1_q4">Básica Primaria</string>
+    <string name="tr_2_q_4">Básica secundaria</string>
+    <string name="tr_3_q_4">Profesional técnica</string>
+    <string name="tr_5_q_4">Postgrado</string>
+    <string name="ques_5">¿Cuenta con experiencia laboral?</string>
+    <string name="tr_1_q_5">Si</string>
+    <string name="tr_2_q_5">No</string>
+    <string name="lb_contact">Contactanos</string>
+    <string name="lb_titulo_singup">Registrarse</string>
+    <string name="article_name1">Inclusión laboral de personas con discapacidad en el sector tecnológico</string>
+    <string name="this_is_a_title2">Conoce los distintos tipos de discapacidad</string>
+    <string name="team_dec">Este trabajo es gracias a</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="prompt_email">Correo</string>
+    <string name="invalid_password">La contraseña debe tener al menos 5 caracteres</string>
     <string name="ms_prueba">Este es un mensaje de prueba</string>
+
+
 </resources>

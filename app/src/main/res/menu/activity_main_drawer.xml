@@ -2,7 +2,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigation_view">
+    tools:showIn="navigation_view"
+    >
+
 
     <group android:checkableBehavior="single">
         <item
@@ -27,7 +29,7 @@
             android:icon="@drawable/ic_chart_fachero"
             android:title="@string/lb_titulo_report" />
         <item
-            android:id="@+id/translateFragment"
+            android:id="@+id/trActivity"
             android:icon="@drawable/ic_baseline_translate_24"
             android:title="@string/st_traductor" />
         <item

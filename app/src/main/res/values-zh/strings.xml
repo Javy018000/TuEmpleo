@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">你的工作</string>
+    <string name="navigation_drawer_open">打开导航抽屉</string>
+    <string name="navigation_drawer_close">关闭导航抽屉</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc">导航标题</string>
+    <string name="action_settings">选项</string>
+
+    <string name="menu_home">开始</string>
+    <string name="menu_gallery">画廊</string>
+    <string name="menu_slideshow">幻灯片</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">你好空白片段</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登录或注册</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="welcome">欢迎！</string>
+    <string name="invalid_username">用户名无效</string>
+    <string name="login_failed">你的工作</string>
+
+    //label titulos
+    <string name="lb_titulo_mprincipal">主菜单</string>
+    <string name="lb_titulo_about">关于</string>
+    <string name="lb_titulo_formulario">形式</string>
+    <string name="lb_titulo_home">开始</string>
+    <string name="lb_titulo_login">登录</string>
+    <string name="lb_titulo_report">报告</string>
+
+    //settings menu
+    <string name="st_traductor">成语</string>
+
+    //mensajes prueba
+    <string name="ms_select">选择语言</string>
+    <string name="greet">这是一条测试消息</string>
+
+    //mensajes home
+    <string name="blogs">博客</string>
+    <string name="data_published1">9 月 22 日</string>
+    <string name="article_name2">认知可及性</string>
+    <string name="text_teaser1">将残疾人纳入技术部门是减少该人群遭受的劳动力排斥差距的一种替代方法……</string>
+    <string name="data_published2">8 月 13 日</string>
+    <string name="text_teaser2">我们的目标之一是为所有人创建简单易用的环境和文档……我们使文档易于阅读。.</string>
+    <string name="this_is_a_title">谷歌认证</string>
+    <string name="selection_title1">TML 是 CSS</string>
+    <string name="this_is_a_description1">这是一个好消息，让许多致力于网络设计、开发和内容写作领域的专业人士感到高兴...</string>
+    <string name="selection_title2">电子商务</string>
+    <string name="this_is_a_description2">今天我很高兴地宣布推出由工业组织学院设计并合作开发的文凭课程......</string>
+    <string name="selection_title3">数字营销</string>
+    <string name="this_is_a_description3">Google 开发了一个全面的 40 小时课程，专门针对营销和销售策略...</string>
+    <string name="dec_butom">这是一个博客，提供有关残疾类型的信息，请点击按钮进入</string>
+    <string name="team">设备</string>
+    <string name="name1" translatable="false">Javier Andres Ramirez Zabaleta</string>
+    <string name="name2" translatable="false">Oscar Julian Hernandez Bonilla</string>
+    <string name="name_desc1">Scrum 大师</string>
+    <string name="name_desc2">产品拥有者</string>
+    <string name="name3" translatable="false">Esteban Perdomo Buitrago</string>
+    <string name="name_desc3">Scrum 团队</string>
+    <string name="saludo">欢迎</string>
+    <string name="ques_1">你有什么类型的残疾？</string>
+    <string name="rt_1_q_1">视觉的</string>
+    <string name="tr_2_q_1">听觉</string>
+    <string name="tr_3_q_1">身体的</string>
+    <string name="tr_4_q_1">多</string>
+    <string name="tr_5_q_1">其他</string>
+    <string name="ques_2">残疾等级</string>
+    <string name="tr_1_q_2">高的</string>
+    <string name="tr_2_q_2">一半</string>
+    <string name="tr_3_q_2">低</string>
+    <string name="ques_3">你在哪个年龄段？</string>
+    <string name="tr_1_q_3" translatable="false">18 - 24</string>g>
+    <string name="tr_2_q_3" translatable="false">25 - 30</string>
+    <string name="tr_3_q_3" translatable="false">31 - 35</string>
+    <string name="tr_4_q_3">36个或更多</string>
+    <string name="ques_4">你上学的最后一级是什么？</string>
+    <string name="tr_1_q4">基本小学</string>
+    <string name="tr_2_q_4">基础高中</string>
+    <string name="tr_3_q_4">技术专家</string>
+    <string name="tr_5_q_4">研究生</string>
+    <string name="ques_5">你有工作经验吗？</string>
+    <string name="tr_1_q_5">是的</string>
+    <string name="tr_2_q_5">没有</string>
+    <string name="lb_contact">联系我们</string>
+    <string name="lb_titulo_singup">报到</string>
+    <string name="article_name1">将残疾人纳入技术部门</string>
+    <string name="this_is_a_title2">了解不同类型的残疾</string>
+    <string name="team_dec">这项工作归功于</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="prompt_email">邮件</string>
+    <string name="invalid_password">密码必须至少为 5 个字符</string>
+    <string name="ms_prueba">这是一条测试消息</string>
+
+</resources>
