@@ -2,7 +2,7 @@
     <string name="app_name">TuEmpleo</string>
     <string name="navigation_drawer_open">Abrir navigation drawer</string>
     <string name="navigation_drawer_close">Cerrar navigation drawer</string>
-    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_subtitle" translatable="false">tuempleo@gmail.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Opciones</string>
 
