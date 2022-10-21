@@ -23,7 +23,7 @@
             android:icon="@drawable/ic_formulario_fachero"
             android:title="@string/lb_titulo_formulario" />
         <item
-            android:id="@+id/reporteFragment"
+            android:id="@+id/reporteActivity2"
             android:icon="@drawable/ic_chart_fachero"
             android:title="@string/lb_titulo_report" />
         <item

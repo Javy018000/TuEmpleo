@@ -43,13 +43,13 @@
         android:label="@string/lb_titulo_formulario"
         tools:layout="@layout/fragment_formulario" />
     <fragment
-        android:id="@+id/reporteFragment"
-        android:name="com.example.tuempleo.ReporteFragment"
-        android:label="@string/lb_titulo_report"
-        tools:layout="@layout/fragment_reporte" />
-    <fragment
         android:id="@+id/reporte2Fragment"
         android:name="com.example.tuempleo.Reporte2Fragment"
         android:label="fragment_reporte2"
         tools:layout="@layout/fragment_reporte2" />
+    <activity
+        android:id="@+id/reporteActivity2"
+        android:name="com.example.tuempleo.ReporteActivity"
+        android:label="activity_reporte"
+        tools:layout="@layout/activity_reporte" />
 </navigation>
