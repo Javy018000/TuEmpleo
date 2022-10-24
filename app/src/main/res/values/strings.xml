@@ -1,8 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">TuEmpleo</string>
+    <string name="nav_header_subtitle" translatable="false">Nose</string>
     <string name="navigation_drawer_open">Abrir navigation drawer</string>
     <string name="navigation_drawer_close">Cerrar navigation drawer</string>
-    <string name="nav_header_subtitle" translatable="false">tuempleo@gmail.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Opciones</string>
 
@@ -52,7 +52,6 @@
     <string name="this_is_a_description3">Google ha elaborado un completísimo curso de 40 horas de duración abocado al marketing y las estrategias de ventas...</string>
     <string name="dec_butom">Este es un blog que provee información de tipos de discapacidades para ingresar has clic en el boton</string>
     <string name="team">Equipo</string>
-    <string name="name1" translatable="false">Javier Andres Ramirez Zabaleta</string>
     <string name="name2" translatable="false">Oscar Julian Hernandez Bonilla</string>
     <string name="name_desc1">Scrum Master</string>
     <string name="name_desc2">Product Owner</string>
@@ -91,6 +90,8 @@
     <string name="prompt_email">Correo</string>
     <string name="invalid_password">La contraseña debe tener al menos 5 caracteres</string>
     <string name="ms_prueba">Este es un mensaje de prueba</string>
+    <string name="name1" translatable="false">Javier Andres Ramirez Zabaleta</string>
+
 
 
 </resources>

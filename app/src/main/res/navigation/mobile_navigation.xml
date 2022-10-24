@@ -52,4 +52,9 @@
         android:name="com.example.tuempleo.ReporteActivity"
         android:label="activity_reporte"
         tools:layout="@layout/activity_reporte" />
+    <activity
+        android:id="@+id/trActivity"
+        android:name="com.example.tuempleo.TrActivity"
+        android:label="activity_tr"
+        tools:layout="@layout/activity_tr" />
 </navigation>

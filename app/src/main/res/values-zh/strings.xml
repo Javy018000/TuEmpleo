@@ -3,7 +3,6 @@
     <string name="app_name">你的工作</string>
     <string name="navigation_drawer_open">打开导航抽屉</string>
     <string name="navigation_drawer_close">关闭导航抽屉</string>
-    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
     <string name="nav_header_desc">导航标题</string>
     <string name="action_settings">选项</string>
 
@@ -53,11 +52,8 @@
     <string name="this_is_a_description3">Google 开发了一个全面的 40 小时课程，专门针对营销和销售策略...</string>
     <string name="dec_butom">这是一个博客，提供有关残疾类型的信息，请点击按钮进入</string>
     <string name="team">设备</string>
-    <string name="name1" translatable="false">Javier Andres Ramirez Zabaleta</string>
-    <string name="name2" translatable="false">Oscar Julian Hernandez Bonilla</string>
     <string name="name_desc1">Scrum 大师</string>
     <string name="name_desc2">产品拥有者</string>
-    <string name="name3" translatable="false">Esteban Perdomo Buitrago</string>
     <string name="name_desc3">Scrum 团队</string>
     <string name="saludo">欢迎</string>
     <string name="ques_1">你有什么类型的残疾？</string>
@@ -70,10 +66,11 @@
     <string name="tr_1_q_2">高的</string>
     <string name="tr_2_q_2">一半</string>
     <string name="tr_3_q_2">低</string>
-    <string name="ques_3">你在哪个年龄段？</string>
-    <string name="tr_1_q_3" translatable="false">18 - 24</string>g>
-    <string name="tr_2_q_3" translatable="false">25 - 30</string>
-    <string name="tr_3_q_3" translatable="false">31 - 35</string>
+    <string name="ques_3">你在哪个年龄段？</string><![CDATA[
+    g>
+
+
+    ]]>
     <string name="tr_4_q_3">36个或更多</string>
     <string name="ques_4">你上学的最后一级是什么？</string>
     <string name="tr_1_q4">基本小学</string>
@@ -88,7 +85,6 @@
     <string name="article_name1">将残疾人纳入技术部门</string>
     <string name="this_is_a_title2">了解不同类型的残疾</string>
     <string name="team_dec">这项工作归功于</string>
-    <string name="nav_header_title" translatable="false">Android Studio</string>
     <string name="prompt_email">邮件</string>
     <string name="invalid_password">密码必须至少为 5 个字符</string>
     <string name="ms_prueba">这是一条测试消息</string>

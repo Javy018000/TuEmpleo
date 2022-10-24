@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".fragment_about">
 
     <!-- TODO: Update blank fragment layout -->
@@ -17,6 +18,7 @@
             android:layout_marginTop="32dp"
             android:text="@string/team"
             android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@color/n_backgroung"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -29,6 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="@string/team_dec"
+            android:textColor="@color/n_backgroung"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView1" />
@@ -79,6 +82,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/name1"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                android:textColor="@color/n_backgroung"
                                 app:layout_constraintEnd_toStartOf="@+id/divider1"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toBottomOf="@+id/imageButton1" />
@@ -118,6 +122,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/name2"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                android:textColor="@color/n_backgroung"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toEndOf="@+id/divider1"
                                 app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
@@ -160,6 +165,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/name3"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                android:textColor="@color/n_backgroung"
                                 app:layout_constraintEnd_toStartOf="@+id/divider2"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toBottomOf="@+id/imageButton3" />

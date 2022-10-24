@@ -55,11 +55,8 @@
     <string name="this_is_a_description3">Google ने विपणन और बिक्री रणनीतियों के लिए समर्पित एक बहुत ही पूर्ण 40-घंटे का पाठ्यक्रम विकसित किया है.</string>
     <string name="dec_butom">यह एक ब्लॉग है जो दर्ज करने के लिए विकलांगों के प्रकार के बारे में जानकारी प्रदान करता है बटन पर क्लिक करें</string>
     <string name="team">उपकरण</string>
-    <string name="name1" translatable="false">Javier Andres Ramirez Zabaleta</string>
-    <string name="name2" translatable="false">Oscar Julian Hernandez Bonilla</string>
     <string name="name_desc1">जमघट मास्टर</string>
     <string name="name_desc2">उत्पाद स्वामी</string>
-    <string name="name3" translatable="false">Esteban Perdomo Buitrago</string>
     <string name="name_desc3">स्क्रम टीम</string>
     <string name="saludo">स्वागत</string>
     <string name="ques_1">आपके पास किस प्रकार की विकलांगता है?</string>
@@ -72,10 +69,10 @@
     <string name="tr_1_q_2">उच्च</string>
     <string name="tr_2_q_2">मध्यम</string>
     <string name="tr_3_q_2">छोटा</string>
-    <string name="ques_3">आप किस आयु सीमा में हैं?</string>
-    <string name="tr_1_q_3" translatable="false">18 - 24</string>g>
-    <string name="tr_2_q_3" translatable="false">25 - 30</string>
-    <string name="tr_3_q_3" translatable="false">31 - 35</string>
+    <string name="ques_3">आप किस आयु सीमा में हैं?</string><![CDATA[
+    g>
+
+    ]]>
     <string name="tr_4_q_3">36 या अधिक</string>
     <string name="ques_4">आपकी स्कूली शिक्षा का अंतिम स्तर क्या है?</string>
     <string name="tr_1_q4">बुनियादी प्राथमिक</string>

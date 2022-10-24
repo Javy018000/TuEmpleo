@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/n_background"
     tools:context=".ui.gallery.GalleryFragment">
 
     <TextView
@@ -19,13 +20,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="408dp"
-        android:layout_height="465dp"
-        android:src="@drawable/blog_2_img"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="81dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

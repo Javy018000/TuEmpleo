@@ -12,13 +12,17 @@
     <color name="beta_blue">#285270</color>
     <color name="nose">#4C7CA6</color>
     <color name="backgroung">#f6ebdf</color>
+    <color name="backgroung2">#68ddbd</color>
     <color name="blue_purple">#221B98</color>
     <color name="blue_menu">#3164D9</color>
     <color name="n_beta_blue">#08415C</color>
     <color name="n_light_blue">#1a76c7</color>
     <color name="n_dark_blue">#003e78</color>
     <color name="n_backgroung">#0D102B</color>
+    <color name="n_backgroung2">#00003d</color>
     <color name="nose2">#a6dee3</color>
+
+
 
 
 
