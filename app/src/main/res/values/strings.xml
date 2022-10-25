@@ -93,15 +93,15 @@
     <string name="name1" translatable="false">Javier Andres Ramirez Zabaleta</string>
 
     //SignUp y LongIn
-    <string name="li_username">Nombre de Usuario</string>
+    <string name="li_email">Correo Electronico</string>
     <string name="li_passw">Contraseña</string>
     <string name="li_btn">Iniciar sesion</string>
 
-    <string name="su_email">Nombre de Usuario</string>
-    <string name="su_username">Nombre de Usuario</string>
+    <string name="su_email">Correo Electronico</string>
     <string name="su_passw">Contraseña</string>
     <string name="su_passw2">Confirmar Contraseña</string>
     <string name="su_btn">Registrarse</string>
+    <string name="su_error_pasw">Las contraseñas no coinciden</string>
 
 
 </resources>

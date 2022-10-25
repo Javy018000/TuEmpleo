@@ -21,19 +21,19 @@
             android:layout_height="match_parent">
 
             <EditText
-                android:id="@+id/userName"
+                android:id="@+id/li_userName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="66dp"
                 android:layout_marginTop="64dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="@string/li_username"
+                android:text="@string/li_email"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/passw"
+                android:id="@+id/li_passw"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="66dp"
@@ -42,7 +42,7 @@
                 android:ems="10"
                 android:inputType="textPassword"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/userName" />
+                app:layout_constraintTop_toBottomOf="@+id/li_userName" />
 
             <Button
                 android:id="@+id/signUpBtn"
@@ -50,9 +50,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="66dp"
                 android:layout_marginTop="32dp"
+                android:onClick="logIn"
                 android:text="@string/li_btn"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/passw" />
+                app:layout_constraintTop_toBottomOf="@+id/li_passw" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

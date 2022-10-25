@@ -48,7 +48,7 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/loginFragment"
+            android:id="@+id/logInActivity"
             android:icon="@drawable/ic_login_fachero"
             android:title="@string/lb_titulo_login" />
     <item
