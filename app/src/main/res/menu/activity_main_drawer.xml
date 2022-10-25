@@ -50,5 +50,10 @@
         <item
             android:id="@+id/loginFragment"
             android:icon="@drawable/ic_login_fachero"
-            android:title="@string/lb_titulo_login" />  </group>
+            android:title="@string/lb_titulo_login" />
+    <item
+        android:id="@+id/signUpActivity"
+        android:icon="@drawable/ic_sigup_fachero"
+        android:title="@string/su_btn" />
+</group>
 </menu>

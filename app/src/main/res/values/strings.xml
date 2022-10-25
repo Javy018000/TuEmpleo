@@ -92,6 +92,16 @@
     <string name="ms_prueba">Este es un mensaje de prueba</string>
     <string name="name1" translatable="false">Javier Andres Ramirez Zabaleta</string>
 
+    //SignUp y LongIn
+    <string name="li_username">Nombre de Usuario</string>
+    <string name="li_passw">Contraseña</string>
+    <string name="li_btn">Iniciar sesion</string>
+
+    <string name="su_email">Nombre de Usuario</string>
+    <string name="su_username">Nombre de Usuario</string>
+    <string name="su_passw">Contraseña</string>
+    <string name="su_passw2">Confirmar Contraseña</string>
+    <string name="su_btn">Registrarse</string>
 
 
 </resources>
