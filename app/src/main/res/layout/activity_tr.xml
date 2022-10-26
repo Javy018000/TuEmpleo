@@ -97,6 +97,7 @@
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
                 android:src="@drawable/btn_ln_zh" />
+
         </LinearLayout>
 
     </ScrollView>

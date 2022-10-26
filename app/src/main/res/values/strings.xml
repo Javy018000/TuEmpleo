@@ -37,6 +37,7 @@
     <string name="greet">Este es un mensaje de prueba</string>
 
     //mensajes home
+    <string name="btn_more">Mostrar màs</string>
     <string name="blogs">Blogs</string>
     <string name="data_published1">22/Septiembre</string>
     <string name="article_name2">Accesibilidad Cognitiva</string>

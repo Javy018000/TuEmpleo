@@ -12,12 +12,12 @@
             android:title="Search"
             app:actionViewClass="android.widget.SearchView" />
         <item
-            android:id="@+id/repertorioFragment"
+            android:id="@+id/menuPrincipalActivity"
             android:icon="@drawable/ic_menu_book_fachero"
             android:title="@string/lb_titulo_mprincipal" />
 
         <item
-            android:id="@+id/nav_home"
+            android:id="@+id/homeActivity"
             android:icon="@drawable/ic_home_fachero"
             android:title="@string/lb_titulo_home" />
         <item
@@ -33,7 +33,7 @@
             android:icon="@drawable/ic_baseline_translate_24"
             android:title="@string/st_traductor" />
         <item
-            android:id="@+id/fragment_about"
+            android:id="@+id/aboutActivity"
             android:icon="@drawable/ic_info_fachero"
             android:title="@string/lb_titulo_about" />
         <item

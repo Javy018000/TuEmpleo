@@ -67,4 +67,19 @@
         android:name="com.example.tuempleo.SignUpActivity"
         android:label="activity_sign_up"
         tools:layout="@layout/activity_sign_up" />
+    <activity
+        android:id="@+id/menuPrincipalActivity"
+        android:name="com.example.tuempleo.MenuPrincipalActivity"
+        android:label="activity_menu_principal"
+        tools:layout="@layout/activity_menu_principal" />
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.example.tuempleo.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
+    <activity
+        android:id="@+id/aboutActivity"
+        android:name="com.example.tuempleo.AboutActivity"
+        android:label="activity_about"
+        tools:layout="@layout/activity_about" />
 </navigation>

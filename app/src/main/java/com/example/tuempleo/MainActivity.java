@@ -1,10 +1,12 @@
 package com.example.tuempleo;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -23,10 +25,10 @@ public class MainActivity extends AppCompat {
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -44,8 +46,9 @@ public class MainActivity extends AppCompat {
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,
-                R.id.repertorioFragment, R.id.loginFragment, R.id.formularioFragment,
-                R.id.fragment_about, R.id.repertorioFragment,R.id.trActivity)
+                R.id.repertorioFragment, R.id.logInActivity, R.id.formularioFragment,
+                R.id.aboutActivity, R.id.repertorioFragment,R.id.trActivity, R.id.signUpActivity,
+                R.id.homeActivity)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
@@ -53,6 +56,7 @@ public class MainActivity extends AppCompat {
         NavigationUI.setupWithNavController(navigationView, navController);
 
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -67,5 +71,6 @@ public class MainActivity extends AppCompat {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
 
 }
