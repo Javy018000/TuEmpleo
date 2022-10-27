@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".LogInActivity">
 
     <LinearLayout
@@ -27,8 +28,8 @@
                 android:layout_marginStart="66dp"
                 android:layout_marginTop="64dp"
                 android:ems="10"
+                android:hint="@string/li_email"
                 android:inputType="textPersonName"
-                android:text="@string/li_email"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,6 +41,7 @@
                 android:layout_marginTop="24dp"
 
                 android:ems="10"
+                android:hint="@string/li_passw"
                 android:inputType="textPassword"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/li_userName" />
