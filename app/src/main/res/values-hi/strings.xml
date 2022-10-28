@@ -60,7 +60,7 @@
     <string name="name_desc3">स्क्रम टीम</string>
     <string name="saludo">स्वागत</string>
     <string name="ques_1">आपके पास किस प्रकार की विकलांगता है?</string>
-    <string name="rt_1_q_1">तस्वीर</string>
+    <string name="rt_1_q_1">ग्रहणशील</string>
     <string name="tr_2_q_1">श्रवण</string>
     <string name="tr_3_q_1">भौतिक</string>
     <string name="tr_4_q_1">एकाधिकe</string>
@@ -87,4 +87,21 @@
     <string name="article_name1">" प्रौद्योगिकी क्षेत्र में विकलांग लोगों का श्रम समावेश"</string>
     <string name="this_is_a_title2">जानिए विभिन्न प्रकार की विकलांगता</string>
     <string name="team_dec">यह काम धन्यवाद है</string>
+    <string name="li_email">ईमेल</string>
+    <string name="li_passw">पासवर्ड</string>
+    <string name="li_btn">लॉग इन करें</string>
+    <string name="su_email">ईमेल</string>
+    <string name="su_passw">पासवर्ड</string>
+    <string name="su_passw2">पासवर्ड की पुष्टि कीजिये</string>
+    <string name="su_btn">चेक इन</string>
+    <string name="su_error_pasw">पासवर्ड मेल नहीं खाते</string>
+    <string name="form_enviar">भेजना</string>
+    <string name="resul_more">अधिक जानकारी के लिए आप नीचे दिए गए लिंक पर जा सकते हैं</string>
+    <string name="resul_message">दर्ज किए गए डेटा के आधार पर, आपकी रुचि हो सकती है</string>
+    <string name="resul_emple_descop">इस प्रकार की विकलांगता में आम तौर पर संचार और भाषा में कठिनाइयों के साथ-साथ सुनने या देखने की कमियां शामिल होती हैं। वे ग्राहक सेवा जैसे कार्यों में उत्कृष्टता प्राप्त कर सकते हैं, हालांकि, जैसे ही वे उच्च स्तर की एकाग्रता तक पहुंचते हैं, वे बहुत उपयोगी हो सकते हैं।</string>
+    <string name="re_empleo">ग्राहक सेवा</string>
+    <string name="btn_more">और दिखाओ</string>
+    <string name="pedir_form">हमारा फॉर्म अभी पूरा करें</string>
+    <string name="resul1_emple_descop">यदि आपको सुनने में दिक्कत है, तो आप डेटा रिकॉर्डर की स्थिति में बहुत कुशल हो सकते हैं, क्योंकि एक बार टाइपिंग कोर्स पूरा करने के बाद, उच्च स्तर का उत्पादन हासिल किया जाता है।</string>
+    <string name="re1_empleo">ट्रांसक्रिप्शनिस्ट</string>
 </resources>

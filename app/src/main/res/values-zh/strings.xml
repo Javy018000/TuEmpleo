@@ -57,7 +57,7 @@
     <string name="name_desc3">Scrum 团队</string>
     <string name="saludo">欢迎</string>
     <string name="ques_1">你有什么类型的残疾？</string>
-    <string name="rt_1_q_1">视觉的</string>
+    <string name="rt_1_q_1">感官的</string>
     <string name="tr_2_q_1">听觉</string>
     <string name="tr_3_q_1">身体的</string>
     <string name="tr_4_q_1">多</string>
@@ -88,5 +88,22 @@
     <string name="prompt_email">邮件</string>
     <string name="invalid_password">密码必须至少为 5 个字符</string>
     <string name="ms_prueba">这是一条测试消息</string>
+    <string name="li_email">电子邮件</string>
+    <string name="li_passw">密码</string>
+    <string name="li_btn">登录</string>
+    <string name="su_email">电子邮件</string>
+    <string name="su_passw">密码</string>
+    <string name="su_passw2">确认密码</string>
+    <string name="su_btn">报到</string>
+    <string name="su_error_pasw">密码不匹配</string>
+    <string name="form_enviar">发送</string>
+    <string name="resul_more">有关更多信息，您可以访问以下链接</string>
+    <string name="resul_message">根据输入的数据，您可能会感兴趣</string>
+    <string name="resul_emple_descop">这种类型的残疾通常涉及沟通和语言方面的困难，以及听力或视觉缺陷。 他们可以在客户服务等任务中表现出色，但是，当他们达到高度专注时，他们会非常有用。</string>
+    <string name="re_empleo">客户服务</string>
+    <string name="btn_more">显示更多</string>
+    <string name="pedir_form">立即填写我们的表格</string>
+    <string name="resul1_emple_descop">如果您有听力障碍，您可以非常高效地担任数据记录员，因为一旦您完成了打字课程，就可以实现高水平的生产。</string>
+    <string name="re1_empleo">转录员</string>
 
 </resources>

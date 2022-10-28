@@ -14,6 +14,10 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
     }
+    public void goToFormulario(View view){
+        Intent intent= new Intent(this,ResultFormActivity.class);
+        startActivity(intent);
+    }
     public void goToCerti1(View view){
         Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.oyejuanjo.com/2019/11/curso-online-de-html-y-css-certificado.html"));
         startActivity(intent);

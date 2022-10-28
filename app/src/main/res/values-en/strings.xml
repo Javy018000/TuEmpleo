@@ -28,11 +28,11 @@
     <string name="lb_titulo_about">About us</string>
     <string name="lb_titulo_formulario">Form</string>
     <string name="lb_titulo_home">Home</string>
-    <string name="lb_titulo_login">Sign in</string>
+    <string name="lb_titulo_login">Log in</string>
     <string name="lb_titulo_report">Report</string>
 
     //settings menu
-    <string name="st_traductor">Lenguage</string>
+    <string name="st_traductor">Language</string>
 
     //mensajes prueba
     <string name="ms_select">Choose a lenguage</string>
@@ -62,7 +62,7 @@
     <string name="name_desc3">Scrum Team</string>
     <string name="saludo">Welcome</string>
     <string name="ques_1">What type of disability do you have?</string>
-    <string name="rt_1_q_1">Visual</string>
+    <string name="rt_1_q_1">Sensory</string>
     <string name="tr_2_q_1">Auditory</string>
     <string name="tr_3_q_1">Physical</string>
     <string name="tr_4_q_1">Multiple</string>
@@ -85,5 +85,22 @@
     <string name="lb_contact">" Contact us"</string>
     <string name="lb_titulo_singup">Sing in</string>
     <string name="data_published1">22/September</string>
+    <string name="li_email">Email</string>
+    <string name="li_passw">Password</string>
+    <string name="li_btn">log in</string>
+    <string name="su_email">Email</string>
+    <string name="su_passw">Password</string>
+    <string name="su_passw2">Confirm Password</string>
+    <string name="su_btn">Sign in</string>
+    <string name="su_error_pasw">Passwords do not match</string>
+    <string name="form_enviar">Send</string>
+    <string name="resul_message">Depending on the data entered, you may be interested</string>
+    <string name="resul_more">For more information you can go to the link below</string>
+    <string name="resul_emple_descop">This type of disability generally involves difficulties in communication and language, as well as hearing or visual deficiencies. They can excel in tasks such as customer service, however, as they reach high levels of concentration they can be very useful.</string>
+    <string name="re_empleo">Customer service</string>
+    <string name="btn_more">Show more</string>
+    <string name="pedir_form">Complete our form now</string>
+    <string name="resul1_emple_descop">If you have a hearing impairment, you can be very efficient in a position as a data recorder, because, once you have completed a typing course, high levels of production are achieved.</string>
+    <string name="re1_empleo">Typist</string>
 
 </resources>

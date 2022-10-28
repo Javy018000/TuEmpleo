@@ -82,4 +82,14 @@
         android:name="com.example.tuempleo.AboutActivity"
         android:label="activity_about"
         tools:layout="@layout/activity_about" />
+    <fragment
+        android:id="@+id/reporteFragment"
+        android:name="com.example.tuempleo.ReporteFragment"
+        android:label="fragment_reporte"
+        tools:layout="@layout/fragment_reporte" />
+    <activity
+        android:id="@+id/resultFormActivity"
+        android:name="com.example.tuempleo.ResultFormActivity"
+        android:label="activity_result_form"
+        tools:layout="@layout/activity_result_form" />
 </navigation>

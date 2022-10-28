@@ -52,7 +52,7 @@ public class LogInActivity extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(),"Acceso Concedido",Toast.LENGTH_SHORT).show();
                             FirebaseUser user=mAuth.getCurrentUser();
 
-                            Intent intent= new Intent(getApplicationContext(),TrActivity.class);
+                            Intent intent= new Intent(getApplicationContext(),HomeActivity.class);
                             startActivity(intent);
                             //updateUI(user);
                         }else{

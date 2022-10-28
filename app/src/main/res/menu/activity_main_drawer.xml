@@ -21,7 +21,7 @@
             android:icon="@drawable/ic_home_fachero"
             android:title="@string/lb_titulo_home" />
         <item
-            android:id="@+id/formularioFragment"
+            android:id="@+id/resultFormActivity"
             android:icon="@drawable/ic_formulario_fachero"
             android:title="@string/lb_titulo_formulario" />
         <item
@@ -36,14 +36,14 @@
             android:id="@+id/aboutActivity"
             android:icon="@drawable/ic_info_fachero"
             android:title="@string/lb_titulo_about" />
-        <item
+        <!--<item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/menu_gallery" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:title="@string/menu_slideshow" />-->
     </group>
 
     <group android:checkableBehavior="single">

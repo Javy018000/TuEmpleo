@@ -1,6 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">TuEmpleo</string>
-    <string name="nav_header_subtitle" translatable="false">Nose</string>
     <string name="navigation_drawer_open">Abrir navigation drawer</string>
     <string name="navigation_drawer_close">Cerrar navigation drawer</string>
     <string name="nav_header_desc">Navigation header</string>
@@ -60,7 +59,7 @@
     <string name="name_desc3">Scrum Team</string>
     <string name="saludo">Bienvenido</string>
     <string name="ques_1">¿Que tipo de discapacidad tiene?</string>
-    <string name="rt_1_q_1">Visual</string>
+    <string name="rt_1_q_1">Sensorial</string>
     <string name="tr_2_q_1">Auditiva</string>
     <string name="tr_3_q_1">Física</string>
     <string name="tr_4_q_1">Múltiple</string>
@@ -94,15 +93,26 @@
     <string name="name1" translatable="false">Javier Andres Ramirez Zabaleta</string>
 
     //SignUp y LongIn
-    <string name="li_email">Correo Electronico</string>
+    <string name="li_email">Correo Electrónico</string>
     <string name="li_passw">Contraseña</string>
-    <string name="li_btn">Iniciar sesion</string>
+    <string name="li_btn">Iniciar sesión</string>
 
     <string name="su_email">Correo Electronico</string>
     <string name="su_passw">Contraseña</string>
     <string name="su_passw2">Confirmar Contraseña</string>
     <string name="su_btn">Registrarse</string>
     <string name="su_error_pasw">Las contraseñas no coinciden</string>
+    <string name="nav_header_subtitle" translatable="false">tuempleoapp@gmail.com</string>
+    <string name="form_enviar">Enviar</string>
 
+    //Resultados
+    <string name="resul_message">Según los datos ingresados te puede interesar:</string>
+    <string name="re_empleo">Servicio al cliente</string>
+    <string name="resul_more">Para más información puedes ingresar al enlace de abajo</string>
+    <string name="resul_emple_descop">Este tipo de discapacidad implica, generalmente, dificultades en la comunicación y el lenguaje, así como las deficiencias auditivas o visuales. Pueden destacarse en labores como servicio al cliente, no obstante, como alcanzan niveles altos de concentración pueden ser de gran utilidad.</string>
+
+    <string name="resul1_emple_descop">Si cuentas con una disminución auditiva puedes ser muy eficiente en un puesto como grabador de datos, debido a que, una vez realizado un curso de mecanografía, se alcanzan altos niveles de producción.</string>
+    <string name="pedir_form">Completa el Formulario ahora</string>
+    <string name="re1_empleo">Mecanógrafo</string>
 
 </resources>
