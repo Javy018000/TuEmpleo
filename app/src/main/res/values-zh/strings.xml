@@ -58,7 +58,7 @@
     <string name="saludo">欢迎</string>
     <string name="ques_1">你有什么类型的残疾？</string>
     <string name="rt_1_q_1">感官的</string>
-    <string name="tr_2_q_1">听觉</string>
+    <string name="tr_2_q_1">知识分子</string>
     <string name="tr_3_q_1">身体的</string>
     <string name="tr_4_q_1">多</string>
     <string name="tr_5_q_1">其他</string>
@@ -105,5 +105,7 @@
     <string name="pedir_form">立即填写我们的表格</string>
     <string name="resul1_emple_descop">如果您有听力障碍，您可以非常高效地担任数据记录员，因为一旦您完成了打字课程，就可以实现高水平的生产。</string>
     <string name="re1_empleo">转录员</string>
+    <string name="re2_emple_descap">在零售业工作</string>
+    <string name="resul2_emple_descop">这是残障人士的工作之一，你可以毫无问题地完成，因为它只需要极少的微积分和语言培训。</string>
 
 </resources>

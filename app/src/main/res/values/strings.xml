@@ -60,7 +60,7 @@
     <string name="saludo">Bienvenido</string>
     <string name="ques_1">¿Que tipo de discapacidad tiene?</string>
     <string name="rt_1_q_1">Sensorial</string>
-    <string name="tr_2_q_1">Auditiva</string>
+    <string name="tr_2_q_1">Intelectual</string>
     <string name="tr_3_q_1">Física</string>
     <string name="tr_4_q_1">Múltiple</string>
     <string name="tr_5_q_1">Otra</string>
@@ -114,5 +114,8 @@
     <string name="resul1_emple_descop">Si cuentas con una disminución auditiva puedes ser muy eficiente en un puesto como grabador de datos, debido a que, una vez realizado un curso de mecanografía, se alcanzan altos niveles de producción.</string>
     <string name="pedir_form">Completa el Formulario ahora</string>
     <string name="re1_empleo">Mecanógrafo</string>
+
+    <string name="re2_emple_descap">Trabajar en comercio minorista</string>
+    <string name="resul2_emple_descop">Este es uno de los trabajos para personas con discapacidad que efectúas sin problemas, ya que, solo requiere de una formación mínima en cálculo y lenguaje.</string>
 
 </resources>

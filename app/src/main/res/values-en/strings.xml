@@ -63,7 +63,7 @@
     <string name="saludo">Welcome</string>
     <string name="ques_1">What type of disability do you have?</string>
     <string name="rt_1_q_1">Sensory</string>
-    <string name="tr_2_q_1">Auditory</string>
+    <string name="tr_2_q_1">iItellectual</string>
     <string name="tr_3_q_1">Physical</string>
     <string name="tr_4_q_1">Multiple</string>
     <string name="tr_5_q_1">Other</string>
@@ -102,5 +102,7 @@
     <string name="pedir_form">Complete our form now</string>
     <string name="resul1_emple_descop">If you have a hearing impairment, you can be very efficient in a position as a data recorder, because, once you have completed a typing course, high levels of production are achieved.</string>
     <string name="re1_empleo">Typist</string>
+    <string name="re2_emple_descap">Work in retail</string>
+    <string name="resul2_emple_descop">This is one of the jobs for people with disabilities that you do without problems, since it only requires minimal training in calculus and language.</string>
 
 </resources>

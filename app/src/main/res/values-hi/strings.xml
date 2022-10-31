@@ -61,7 +61,7 @@
     <string name="saludo">स्वागत</string>
     <string name="ques_1">आपके पास किस प्रकार की विकलांगता है?</string>
     <string name="rt_1_q_1">ग्रहणशील</string>
-    <string name="tr_2_q_1">श्रवण</string>
+    <string name="tr_2_q_1">बौद्धिक</string>
     <string name="tr_3_q_1">भौतिक</string>
     <string name="tr_4_q_1">एकाधिकe</string>
     <string name="tr_5_q_1">अन्य</string>
@@ -104,4 +104,6 @@
     <string name="pedir_form">हमारा फॉर्म अभी पूरा करें</string>
     <string name="resul1_emple_descop">यदि आपको सुनने में दिक्कत है, तो आप डेटा रिकॉर्डर की स्थिति में बहुत कुशल हो सकते हैं, क्योंकि एक बार टाइपिंग कोर्स पूरा करने के बाद, उच्च स्तर का उत्पादन हासिल किया जाता है।</string>
     <string name="re1_empleo">ट्रांसक्रिप्शनिस्ट</string>
+    <string name="re2_emple_descap">खुदरा में काम</string>
+    <string name="resul2_emple_descop">यह विकलांग लोगों के लिए एक काम है जिसे आप बिना किसी समस्या के करते हैं, क्योंकि इसके लिए केवल कैलकुलस और भाषा में न्यूनतम प्रशिक्षण की आवश्यकता होती है।</string>
 </resources>
