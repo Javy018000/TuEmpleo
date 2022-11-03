@@ -104,6 +104,7 @@
     <string name="su_error_pasw">Las contraseñas no coinciden</string>
     <string name="nav_header_subtitle" translatable="false">tuempleoapp@gmail.com</string>
     <string name="form_enviar">Enviar</string>
+    <string name="su_phone">Teléfono</string>
 
     //Resultados
     <string name="resul_message">Según los datos ingresados te puede interesar:</string>

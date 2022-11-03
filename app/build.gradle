@@ -48,4 +48,8 @@ dependencies {
 
     //Graficas
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    //Token
+
+    implementation 'io.github.chaosleung:pinview:1.4.4'
 }

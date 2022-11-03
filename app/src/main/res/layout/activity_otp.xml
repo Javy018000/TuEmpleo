@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".Otp">
+
+    <TextView
+        android:id="@+id/otp_description_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:includeFontPadding="false"
+        android:text="OTP sent on Your register Mobile Number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <com.chaos.view.PinView
+        android:id="@+id/verification_code_entered_by_user"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:cursorVisible="true"
+        android:inputType="number"
+        android:itemBackground="#65EAEAEA"
+        app:cursorColor="@color/black"
+        app:hideLineWhenFilled="true"
+        app:itemCount="6"
+        app:itemHeight="50dp"
+        app:itemRadius="5dp"
+        app:itemWidth="50dp"
+        app:lineColor="#FF9800"
+        app:lineWidth="1dp" />
+
+
+    <Button
+        android:id="@+id/verify_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="callNextScreenFromOTP"
+        android:text="Verify code"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="30dp"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:backgroundTint="@color/black"
+        android:transitionName="transition_OTP_screen"
+        tools:ignore="OnClick" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content" />
+
+</LinearLayout>

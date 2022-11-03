@@ -20,6 +20,7 @@ public class SignUpActivity extends AppCompatActivity {
     private EditText email;
     private EditText passw;
     private EditText comPassw;
+    private EditText phone;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,7 @@ public class SignUpActivity extends AppCompatActivity {
         email= findViewById(R.id.userName);
         passw= findViewById(R.id.passw);
         comPassw= findViewById(R.id.confirPassw);
+        phone=findViewById(R.id.phone);
     }
     @Override
     public void onStart() {
