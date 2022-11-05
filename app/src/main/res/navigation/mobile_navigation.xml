@@ -92,4 +92,13 @@
         android:name="com.example.tuempleo.ResultFormActivity"
         android:label="activity_result_form"
         tools:layout="@layout/activity_result_form" />
+    <activity
+        android:id="@+id/otpActivity"
+        android:name="com.example.tuempleo.OtpActivity"
+        android:label="activity_otp"
+        tools:layout="@layout/activity_otp" />
+    <activity
+        android:id="@+id/isLoggingActivity"
+        android:name="com.example.tuempleo.IsLoggingActivity"
+        android:label="IsLoggingActivity" />
 </navigation>

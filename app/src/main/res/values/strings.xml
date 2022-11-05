@@ -101,6 +101,7 @@
     <string name="su_passw">Contraseña</string>
     <string name="su_passw2">Confirmar Contraseña</string>
     <string name="su_btn">Registrarse</string>
+    <string name="su_phone">Teléfono</string>
     <string name="su_error_pasw">Las contraseñas no coinciden</string>
     <string name="nav_header_subtitle" translatable="false">tuempleoapp@gmail.com</string>
     <string name="form_enviar">Enviar</string>
