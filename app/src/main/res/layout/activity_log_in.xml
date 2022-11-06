@@ -52,10 +52,19 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="66dp"
                 android:layout_marginTop="32dp"
-                android:onClick="logIn"
                 android:text="@string/li_btn"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/li_passw" />
+
+            <TextView
+                android:id="@+id/text_view_response"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="98dp"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/signUpBtn" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

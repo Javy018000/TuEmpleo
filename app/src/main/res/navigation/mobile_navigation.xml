@@ -101,4 +101,12 @@
         android:id="@+id/isLoggingActivity"
         android:name="com.example.tuempleo.IsLoggingActivity"
         android:label="IsLoggingActivity" />
+    <activity
+        android:id="@+id/otpLoginActivity"
+        android:name="com.example.tuempleo.OtpLoginActivity"
+        android:label="OtpLoginActivity" />
+    <activity
+        android:id="@+id/continuePhoneActivity"
+        android:name="com.example.tuempleo.ContinuePhoneActivity"
+        android:label="ContinuePhoneActivity" />
 </navigation>

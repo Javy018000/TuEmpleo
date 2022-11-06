@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
@@ -23,52 +22,27 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
+public class ContinuePhoneActivity extends AppCompatActivity {
 
-public class SignUpActivity extends AppCompatActivity {
-
-
+    EditText mEditContinue;
+    Button mButtonContinue;
+    TextView mTextResponse;
     private FirebaseAuth mAuth;
-
-
-
-    private EditText email;
-    private EditText passw;
-    private EditText comPassw;
-    private EditText mEditTextNumberPhone;
-    private EditText name;
-    private EditText lastName;
-
-    static String nombres, apellidos;
-    static String correo;
-    static String contraseña;
-    static String celular;
-
-    Button mButtonSend;
-    TextView mTextViewResponse;
     PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks;
 
+
+    String celular;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up);
-        email= findViewById(R.id.userName);
-        passw= findViewById(R.id.passw);
-        comPassw= findViewById(R.id.confirPassw);
-        mEditTextNumberPhone = findViewById(R.id.Phone);
-        mButtonSend = findViewById(R.id.signUpBtn);
-        mTextViewResponse = findViewById(R.id.textViewResponse);
-        name = findViewById(R.id.name);
-        lastName = findViewById(R.id.lastName);
-
-
+        setContentView(R.layout.activity_continue_phone);
+        mButtonContinue = findViewById(R.id.btnContinuar);
+        mEditContinue = findViewById(R.id.edit_continuar);
+        mTextResponse = findViewById(R.id.textContinuar);
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -76,35 +50,34 @@ public class SignUpActivity extends AppCompatActivity {
 
 
 
-        mButtonSend.setOnClickListener(new View.OnClickListener() {
+        mButtonContinue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                nombres = name.getText().toString(); apellidos = lastName.getText().toString();
-                correo = email.getText().toString().trim();contraseña = passw.getText().toString().trim();
-                celular = mEditTextNumberPhone.getText().toString();
-                mTextViewResponse.setTextColor(Color.BLACK);
-                if(nombres.isEmpty() && apellidos.isEmpty() && correo.isEmpty() && contraseña.isEmpty() && celular.isEmpty()){
 
-                    Toast.makeText(getApplicationContext(),"Llene todos los campos",Toast.LENGTH_SHORT).show();
+                celular = mEditContinue.getText().toString();
+                mTextResponse.setTextColor(Color.BLACK);
+                if(celular.isEmpty()){
+
+                    Toast.makeText(getApplicationContext(),"Llene el campo correspondiente",Toast.LENGTH_SHORT).show();
 
                 }
                 else{
 
-                    String phoneNumber = "+57" + mEditTextNumberPhone.getText().toString();
+                    String phoneNumber = "+57" + mEditContinue.getText().toString();
                     if(!phoneNumber.isEmpty()){
                         PhoneAuthOptions options =
                                 PhoneAuthOptions.newBuilder(mAuth)
                                         .setPhoneNumber(phoneNumber)       // Phone number to verify
                                         .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
-                                        .setActivity(SignUpActivity.this)                 // Activity (for callback binding)
+                                        .setActivity(ContinuePhoneActivity.this)                 // Activity (for callback binding)
                                         .setCallbacks(mCallbacks)          // OnVerificationStateChangedCallbacks
                                         .build();
                         PhoneAuthProvider.verifyPhoneNumber(options);
 
 
                     }else{
-                        mTextViewResponse.setText("Ingrese el numero de telefono con su respectivo codigo de Pais");
-                        mTextViewResponse.setTextColor(Color.RED);
+                        mTextResponse.setText("Ingrese el numero de telefono con su respectivo codigo de Pais");
+                        mTextResponse.setTextColor(Color.RED);
                     }
                 }
             }
@@ -121,19 +94,19 @@ public class SignUpActivity extends AppCompatActivity {
             @Override
             public void onVerificationFailed(@NonNull FirebaseException e) {
                 //Falló el inicio de sesion
-                mTextViewResponse.setText(e.getMessage());
-                mTextViewResponse.setTextColor(Color.RED);
+                mTextResponse.setText(e.getMessage());
+                mTextResponse.setTextColor(Color.RED);
             }
 
             @Override
             public void onCodeSent(@NonNull String s, @NonNull PhoneAuthProvider.ForceResendingToken forceResendingToken) {
                 super.onCodeSent(s, forceResendingToken);
-                mTextViewResponse.setText("El codigo de verificacion fue enviado");
-                mTextViewResponse.setTextColor(Color.BLACK);
+                mTextResponse.setText("El codigo de verificacion fue enviado");
+                mTextResponse.setTextColor(Color.BLACK);
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        Intent intent = new Intent(SignUpActivity.this, OtpActivity.class);
+                        Intent intent = new Intent(ContinuePhoneActivity.this, OtpLoginActivity.class);
                         intent.putExtra("auth", s);
                         startActivity(intent);
                     }
@@ -141,6 +114,7 @@ public class SignUpActivity extends AppCompatActivity {
             }
         };
     }
+
     @Override
     protected void onStart() {
         super.onStart();
@@ -157,20 +131,16 @@ public class SignUpActivity extends AppCompatActivity {
                 if(task.isSuccessful()){
                     inicioActivityLogin();
                 }else{
-                    mTextViewResponse.setText(task.getException().getMessage());
-                    mTextViewResponse.setTextColor(Color.RED);
+                    mTextResponse.setText(task.getException().getMessage());
+                    mTextResponse.setTextColor(Color.RED);
                 }
             }
 
         });
     }
     private void inicioActivityLogin() {
-        Intent intent = new Intent(SignUpActivity.this, IsLoggingActivity.class);
+        Intent intent = new Intent(ContinuePhoneActivity.this, IsLoggingActivity.class);
         startActivity(intent);
         finish();
     }
-
-
-
-
 }

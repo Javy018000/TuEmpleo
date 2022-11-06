@@ -97,6 +97,8 @@
     <string name="li_passw">Contraseña</string>
     <string name="li_btn">Iniciar sesión</string>
 
+    <string name="su_name">Nombres</string>
+    <string name="su_last_name">Apellidos</string>
     <string name="su_email">Correo Electronico</string>
     <string name="su_passw">Contraseña</string>
     <string name="su_passw2">Confirmar Contraseña</string>

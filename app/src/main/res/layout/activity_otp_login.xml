@@ -7,10 +7,10 @@
     android:gravity="center"
     android:orientation="vertical"
     android:background="@drawable/background"
-    tools:context=".OtpActivity">
+    tools:context=".OtpLoginActivity">
 
     <TextView
-        android:id="@+id/otp_description_text"
+        android:id="@+id/otp_description_text_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -31,7 +31,7 @@
         android:text="Ingrese el codigo de verificacion"/>
 
     <com.chaos.view.PinView
-        android:id="@+id/verification_code_entered_by_user"
+        android:id="@+id/verification_code_entered_by_user_otp"
         style="@style/PinWidget.PinView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
 
 
     <Button
-        android:id="@+id/verify_btn"
+        android:id="@+id/verify_btn_otp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="callNextScreenFromOTP"
@@ -66,14 +66,14 @@
         tools:ignore="OnClick" />
 
     <ProgressBar
-        android:id="@+id/progress_bar"
+        android:id="@+id/progress_bar_otp"
         android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content" />
 
     <TextView
-        android:id="@+id/textPrueba"
+        android:id="@+id/textPrueba_otp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

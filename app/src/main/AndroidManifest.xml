@@ -16,6 +16,12 @@
         android:theme="@style/Theme.TuEmpleo"
         tools:targetApi="31">
         <activity
+            android:name=".ContinuePhoneActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OtpLoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".OtpActivity"
             android:exported="false" />
         <activity

@@ -34,7 +34,7 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class OtpActivity extends AppCompatActivity {
+public class OtpLoginActivity extends AppCompatActivity {
 
 
     PinView mEditTextCode;
@@ -47,28 +47,18 @@ public class OtpActivity extends AppCompatActivity {
 
     FirebaseAuth mAuth;
     String intenAuth;
-    static boolean boton;
-
-    public boolean isBoton() {
-        return boton;
-    }
-
-    public void setBoton(boolean boton) {
-        this.boton = boton;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_otp);
+        setContentView(R.layout.activity_otp_login);
 
         mFirestore = FirebaseFirestore.getInstance();
 
-        mEditTextCode = findViewById(R.id.verification_code_entered_by_user);
-        mTextViewResponse = findViewById(R.id.textViewResponse);
-        mButtonVerificar = findViewById(R.id.verify_btn);
-        progressBar = findViewById(R.id.progress_bar);
-        mTextPrueba = findViewById(R.id.textPrueba);
+        mEditTextCode = findViewById(R.id.verification_code_entered_by_user_otp);
+        mButtonVerificar = findViewById(R.id.verify_btn_otp);
+        progressBar = findViewById(R.id.progress_bar_otp);
+        mTextPrueba = findViewById(R.id.textPrueba_otp);
         mAuth = FirebaseAuth.getInstance();
 
         intenAuth = getIntent().getStringExtra("auth");
@@ -95,7 +85,6 @@ public class OtpActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
 
-                            subirDatosBasicos();
                             inicioActivityHome();
 
                         }else{
@@ -117,58 +106,10 @@ public class OtpActivity extends AppCompatActivity {
     }
 
     private void inicioActivityHome() {
-        Intent intent = new Intent(OtpActivity.this, MainActivity.class);
+        Intent intent = new Intent(OtpLoginActivity.this, MainActivity.class);
         startActivity(intent);
         finish();
     }
 
-
-
-    private void subirDatosBasicos() {
-
-        comprobarSiCorreoExiste(SignUpActivity.correo);
-
-        mTextPrueba.setText(boton + ".....");
-
-        if(isBoton() == false){
-            String id = mAuth.getCurrentUser().getUid();
-            Map<String, Object> datosBasicos = new HashMap<>();
-
-            datosBasicos.put("Id", id);
-            datosBasicos.put("Nombres", SignUpActivity.nombres);
-            datosBasicos.put("Apellidos", SignUpActivity.apellidos);
-            datosBasicos.put("Correo electronico", SignUpActivity.correo);
-            datosBasicos.put("Contraseña", SignUpActivity.contraseña);
-            datosBasicos.put("Teléfono", SignUpActivity.celular);
-
-            mFirestore.collection("Usuario").document(SignUpActivity.correo).set(datosBasicos).addOnSuccessListener(new OnSuccessListener<Void>() {
-                @Override
-                public void onSuccess(Void unused) {
-                    Toast.makeText(getApplicationContext(), "Registrado exitosamente", Toast.LENGTH_SHORT).show();
-                }
-            }).addOnFailureListener(new OnFailureListener() {
-                @Override
-                public void onFailure(@NonNull Exception e) {
-                    Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
-                }
-            });
-        }
-    }
-    public void comprobarSiCorreoExiste(String corr){
-        final boolean[] prueba = new boolean[1];
-        mFirestore.collection("Usuario").document(corr).addSnapshotListener(new EventListener<DocumentSnapshot>() {
-            @Override
-            public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
-                if(value.exists()){
-                    prueba[0] = true;
-                }
-                else {
-                    prueba[0] = false;
-                }
-            }
-        });
-        setBoton(prueba[0]);
-
-    }
 
 }
