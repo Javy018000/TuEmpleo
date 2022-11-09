@@ -16,6 +16,9 @@
         android:theme="@style/Theme.TuEmpleo"
         tools:targetApi="31">
         <activity
+            android:name=".IsNotLoggingActivity"
+            android:exported="false" />
+        <activity
             android:name=".ContinuePhoneActivity"
             android:exported="false" />
         <activity

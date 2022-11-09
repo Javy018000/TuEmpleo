@@ -39,17 +39,8 @@ public class LogInActivity extends AppCompatActivity {
     private FirebaseFirestore mFirestore;
     PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks;
     private Button mButtonSignUp;
-    private String correo;
-    private String contraseña;
-    private String telefono;
+    static DocumentSnapshot documentSnapshot;
 
-    public void setCorreo(String correo) {
-        this.correo = correo;
-    }
-
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,13 +54,47 @@ public class LogInActivity extends AppCompatActivity {
         mTextViewResponse = findViewById(R.id.text_view_response);
         mFirestore = FirebaseFirestore.getInstance();
 
+        mAuth = FirebaseAuth.getInstance();
+
+        mAuth.setLanguageCode("es");
 
         mButtonSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 obtenerDatos();
             }
+
         });
+        mCallbacks = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
+            @Override
+            public void onVerificationCompleted(@NonNull PhoneAuthCredential phoneAuthCredential) {
+                //Iniciamos secion
+                logIn(phoneAuthCredential);
+
+            }
+
+            @Override
+            public void onVerificationFailed(@NonNull FirebaseException e) {
+                //Falló el inicio de sesion
+                mTextViewResponse.setText(e.getMessage());
+                mTextViewResponse.setTextColor(Color.RED);
+            }
+
+            @Override
+            public void onCodeSent(@NonNull String s, @NonNull PhoneAuthProvider.ForceResendingToken forceResendingToken) {
+                super.onCodeSent(s, forceResendingToken);
+                mTextViewResponse.setText("El codigo de verificacion fue enviado");
+                mTextViewResponse.setTextColor(Color.BLACK);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        Intent intent = new Intent(LogInActivity.this, OtpLoginActivity.class);
+                        intent.putExtra("auth", s);
+                        startActivity(intent);
+                    }
+                },1000);
+            }
+        };
     }
 
     @Override
@@ -83,27 +108,54 @@ public class LogInActivity extends AppCompatActivity {
 
         }
     }
+    private void logIn(PhoneAuthCredential credential){
+        mAuth.signInWithCredential(credential).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if(task.isSuccessful()){
+                    inicioActivityLogin();
+                }else{
+                    mTextViewResponse.setText(task.getException().getMessage());
+                    mTextViewResponse.setTextColor(Color.RED);
+                }
+            }
+
+        });
+    }
     private void inicioActivityLogin() {
         Intent intent = new Intent(LogInActivity.this, IsLoggingActivity.class);
         startActivity(intent);
         finish();
     }
+
     public void obtenerDatos(){
 
-        mFirestore.collection("Usuario").document(email.getText().toString().trim()).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+
+        mFirestore.collection("Usuario").document(email.getText().toString().trim()).get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
-            public void onSuccess(DocumentSnapshot documentSnapshot) {
-                if(documentSnapshot.exists()){
-                    if(documentSnapshot.getString("Correo electronico").isEmpty() && documentSnapshot.getString("Contraseña").isEmpty()){
-                        Toast.makeText(getApplicationContext(), "Llene los campos correspondientes", Toast.LENGTH_SHORT).show();
-                    }else{
-                        Intent intent = new Intent(LogInActivity.this, ContinuePhoneActivity.class);
-                        startActivity(intent);
-                        finish();
+            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                if(task.isSuccessful()){
+                    documentSnapshot = task.getResult();
+                    if(documentSnapshot.exists()){
+                        if(documentSnapshot.getString("Correo electronico").isEmpty() && documentSnapshot.getString("Contraseña").isEmpty()){
+                            Toast.makeText(getApplicationContext(), "Llene los campos correspondientes", Toast.LENGTH_SHORT).show();
+                        }else{
+                            if(documentSnapshot.getString("Contraseña").equals(passw.getText().toString())){
+                                Intent intent = new Intent(LogInActivity.this, ContinuePhoneActivity.class);
+                                startActivity(intent);
+                                finish();
+                            }
+                            else{
+                                Toast.makeText(getApplicationContext(), "La contraseña es incorrecta", Toast.LENGTH_SHORT).show();
+                                //mTextViewResponse.setText("Bases de datos:" + documentSnapshot.getString("Contraseña") + "\nEditText:" + contraseña);
+                            }
+
+
+                        }
                     }
-                }
-                else{
-                    Toast.makeText(getApplicationContext(), "Correo electronico no registrado", Toast.LENGTH_SHORT).show();
+                    else{
+                        Toast.makeText(getApplicationContext(), "Correo electronico no registrado", Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
         }).addOnFailureListener(new OnFailureListener() {

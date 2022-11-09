@@ -10,6 +10,7 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,9 +28,9 @@ import java.util.concurrent.TimeUnit;
 
 public class ContinuePhoneActivity extends AppCompatActivity {
 
-    EditText mEditContinue;
-    Button mButtonContinue;
+    ProgressBar mProgressBar;
     TextView mTextResponse;
+    TextView mTextPrueba;
     private FirebaseAuth mAuth;
     PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks;
 
@@ -40,48 +41,14 @@ public class ContinuePhoneActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_continue_phone);
-        mButtonContinue = findViewById(R.id.btnContinuar);
-        mEditContinue = findViewById(R.id.edit_continuar);
-        mTextResponse = findViewById(R.id.textContinuar);
 
+        mTextResponse = findViewById(R.id.textContinuar);
+        mProgressBar = findViewById(R.id.progress_bar_continue);
+        mTextPrueba = findViewById(R.id.textPruebaContinuar);
         mAuth = FirebaseAuth.getInstance();
 
         mAuth.setLanguageCode("es");
-
-
-
-        mButtonContinue.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                celular = mEditContinue.getText().toString();
-                mTextResponse.setTextColor(Color.BLACK);
-                if(celular.isEmpty()){
-
-                    Toast.makeText(getApplicationContext(),"Llene el campo correspondiente",Toast.LENGTH_SHORT).show();
-
-                }
-                else{
-
-                    String phoneNumber = "+57" + mEditContinue.getText().toString();
-                    if(!phoneNumber.isEmpty()){
-                        PhoneAuthOptions options =
-                                PhoneAuthOptions.newBuilder(mAuth)
-                                        .setPhoneNumber(phoneNumber)       // Phone number to verify
-                                        .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
-                                        .setActivity(ContinuePhoneActivity.this)                 // Activity (for callback binding)
-                                        .setCallbacks(mCallbacks)          // OnVerificationStateChangedCallbacks
-                                        .build();
-                        PhoneAuthProvider.verifyPhoneNumber(options);
-
-
-                    }else{
-                        mTextResponse.setText("Ingrese el numero de telefono con su respectivo codigo de Pais");
-                        mTextResponse.setTextColor(Color.RED);
-                    }
-                }
-            }
-        });
+        celular = LogInActivity.documentSnapshot.getString("Teléfono");
 
         mCallbacks = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
             @Override
@@ -101,8 +68,6 @@ public class ContinuePhoneActivity extends AppCompatActivity {
             @Override
             public void onCodeSent(@NonNull String s, @NonNull PhoneAuthProvider.ForceResendingToken forceResendingToken) {
                 super.onCodeSent(s, forceResendingToken);
-                mTextResponse.setText("El codigo de verificacion fue enviado");
-                mTextResponse.setTextColor(Color.BLACK);
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
@@ -113,6 +78,24 @@ public class ContinuePhoneActivity extends AppCompatActivity {
                 },1000);
             }
         };
+
+            String phoneNumber = "+57" + celular;
+            if(!phoneNumber.isEmpty()){
+                PhoneAuthOptions options =
+                        PhoneAuthOptions.newBuilder(mAuth)
+                                .setPhoneNumber(phoneNumber)       // Phone number to verify
+                                .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
+                                .setActivity(ContinuePhoneActivity.this)                 // Activity (for callback binding)
+                                .setCallbacks(mCallbacks)          // OnVerificationStateChangedCallbacks
+                                .build();
+                PhoneAuthProvider.verifyPhoneNumber(options);
+
+
+            }else{
+                mTextResponse.setText("Ingrese el numero de telefono con su respectivo codigo de Pais");
+                mTextResponse.setTextColor(Color.RED);
+            }
+
     }
 
     @Override
@@ -143,4 +126,5 @@ public class ContinuePhoneActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
 }

@@ -8,8 +8,12 @@ import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class ResultFormActivity extends AppCompatActivity {
     private RadioButton rb0,rb1,rb2,rb3,rb4;
+    FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +23,23 @@ public class ResultFormActivity extends AppCompatActivity {
         rb2=(RadioButton) findViewById(R.id.radioButton2);
         rb3=(RadioButton) findViewById(R.id.radioButton3);
         rb4=(RadioButton) findViewById(R.id.radioButton4);
+        mAuth = FirebaseAuth.getInstance();
+
+
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser user = mAuth.getCurrentUser();
+        if (user == null){
+            Intent intent = new Intent(ResultFormActivity.this, IsNotLoggingActivity.class);
+            startActivity(intent);
+            finish();
+        }
+    }
+
+
     public void goToResultPrue(View view){
         Intent intent= new Intent(this,HomeActivity.class);
         startActivity(intent);

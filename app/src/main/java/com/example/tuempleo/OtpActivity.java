@@ -47,15 +47,6 @@ public class OtpActivity extends AppCompatActivity {
 
     FirebaseAuth mAuth;
     String intenAuth;
-    static boolean boton;
-
-    public boolean isBoton() {
-        return boton;
-    }
-
-    public void setBoton(boolean boton) {
-        this.boton = boton;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -125,12 +116,6 @@ public class OtpActivity extends AppCompatActivity {
 
 
     private void subirDatosBasicos() {
-
-        comprobarSiCorreoExiste(SignUpActivity.correo);
-
-        mTextPrueba.setText(boton + ".....");
-
-        if(isBoton() == false){
             String id = mAuth.getCurrentUser().getUid();
             Map<String, Object> datosBasicos = new HashMap<>();
 
@@ -152,23 +137,8 @@ public class OtpActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             });
-        }
-    }
-    public void comprobarSiCorreoExiste(String corr){
-        final boolean[] prueba = new boolean[1];
-        mFirestore.collection("Usuario").document(corr).addSnapshotListener(new EventListener<DocumentSnapshot>() {
-            @Override
-            public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
-                if(value.exists()){
-                    prueba[0] = true;
-                }
-                else {
-                    prueba[0] = false;
-                }
-            }
-        });
-        setBoton(prueba[0]);
 
     }
+
 
 }

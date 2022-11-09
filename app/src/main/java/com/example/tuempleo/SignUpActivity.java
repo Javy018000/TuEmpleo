@@ -1,6 +1,7 @@
 package com.example.tuempleo;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -15,6 +16,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseException;
 import com.google.firebase.auth.AuthResult;
@@ -25,6 +28,10 @@ import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -35,7 +42,7 @@ public class SignUpActivity extends AppCompatActivity {
 
 
     private FirebaseAuth mAuth;
-
+    private FirebaseFirestore mFirestore;
 
 
     private EditText email;
@@ -48,7 +55,10 @@ public class SignUpActivity extends AppCompatActivity {
     static String nombres, apellidos;
     static String correo;
     static String contraseña;
+    static String confContraseña;
     static String celular;
+
+
 
     Button mButtonSend;
     TextView mTextViewResponse;
@@ -67,8 +77,7 @@ public class SignUpActivity extends AppCompatActivity {
         mTextViewResponse = findViewById(R.id.textViewResponse);
         name = findViewById(R.id.name);
         lastName = findViewById(R.id.lastName);
-
-
+        mFirestore = FirebaseFirestore.getInstance();
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -82,29 +91,52 @@ public class SignUpActivity extends AppCompatActivity {
                 nombres = name.getText().toString(); apellidos = lastName.getText().toString();
                 correo = email.getText().toString().trim();contraseña = passw.getText().toString().trim();
                 celular = mEditTextNumberPhone.getText().toString();
+                confContraseña = comPassw.getText().toString();
                 mTextViewResponse.setTextColor(Color.BLACK);
-                if(nombres.isEmpty() && apellidos.isEmpty() && correo.isEmpty() && contraseña.isEmpty() && celular.isEmpty()){
+                if(nombres.isEmpty() && apellidos.isEmpty() && correo.isEmpty() && contraseña.isEmpty() && celular.isEmpty() && confContraseña.isEmpty()){
 
                     Toast.makeText(getApplicationContext(),"Llene todos los campos",Toast.LENGTH_SHORT).show();
 
                 }
                 else{
+                    if(confContraseña.equals(contraseña)){
+                        mFirestore.collection("Usuario").document(correo).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                            @Override
+                            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                                if(documentSnapshot.exists()){
+                                    Toast.makeText(getApplicationContext(), "Este correo está en uso", Toast.LENGTH_SHORT).show();
+                                }
+                                else {
+                                        String phoneNumber = "+57" + mEditTextNumberPhone.getText().toString();
+                                        if(!phoneNumber.isEmpty()){
+                                            PhoneAuthOptions options =
+                                                    PhoneAuthOptions.newBuilder(mAuth)
+                                                            .setPhoneNumber(phoneNumber)       // Phone number to verify
+                                                            .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
+                                                            .setActivity(SignUpActivity.this)                 // Activity (for callback binding)
+                                                            .setCallbacks(mCallbacks)          // OnVerificationStateChangedCallbacks
+                                                            .build();
+                                            PhoneAuthProvider.verifyPhoneNumber(options);
 
-                    String phoneNumber = "+57" + mEditTextNumberPhone.getText().toString();
-                    if(!phoneNumber.isEmpty()){
-                        PhoneAuthOptions options =
-                                PhoneAuthOptions.newBuilder(mAuth)
-                                        .setPhoneNumber(phoneNumber)       // Phone number to verify
-                                        .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
-                                        .setActivity(SignUpActivity.this)                 // Activity (for callback binding)
-                                        .setCallbacks(mCallbacks)          // OnVerificationStateChangedCallbacks
-                                        .build();
-                        PhoneAuthProvider.verifyPhoneNumber(options);
+
+                                        }else{
+                                            mTextViewResponse.setText("Ingrese el numero de telefono con su respectivo codigo de Pais");
+                                            mTextViewResponse.setTextColor(Color.RED);
+                                        }
+
+                                }
+                            }
+                        }).addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
+                            }
+                        });;
 
 
-                    }else{
-                        mTextViewResponse.setText("Ingrese el numero de telefono con su respectivo codigo de Pais");
-                        mTextViewResponse.setTextColor(Color.RED);
+                    }
+                    else{
+                        Toast.makeText(getApplicationContext(), "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
@@ -169,6 +201,13 @@ public class SignUpActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+    /*public boolean comprobarSiCorreoExiste(String corr){
+        final boolean[] prueba = new boolean[1];
+
+        mTextViewResponse.setText(mTextViewResponse.getText()+ "" + prueba[0]);
+        return prueba[0];
+
+    }*/
 
 
 

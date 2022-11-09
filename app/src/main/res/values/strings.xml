@@ -99,14 +99,18 @@
 
     <string name="su_name">Nombres</string>
     <string name="su_last_name">Apellidos</string>
-    <string name="su_email">Correo Electronico</string>
+    <string name="su_email">Correo Electrónico</string>
     <string name="su_passw">Contraseña</string>
     <string name="su_passw2">Confirmar Contraseña</string>
     <string name="su_btn">Registrarse</string>
     <string name="su_phone">Teléfono</string>
     <string name="su_error_pasw">Las contraseñas no coinciden</string>
+    <string name="otp_message1">Se ha enviado un código por sms a su teléfono</string>
+    <string name="otp_message2">Ingrese el código de verificación</string>
+    <string name="otp_messageButton">Verificar</string>
     <string name="nav_header_subtitle" translatable="false">tuempleoapp@gmail.com</string>
     <string name="form_enviar">Enviar</string>
+
 
     //Resultados
     <string name="resul_message">Según los datos ingresados te puede interesar:</string>
