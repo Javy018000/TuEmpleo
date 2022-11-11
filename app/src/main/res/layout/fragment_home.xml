@@ -4,23 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/background"
+    android:background="@drawable/n_background"
     android:onClick="goCerty1"
     tools:context=".ui.home.HomeFragment">
-
-    <TextView
-        android:id="@+id/text_home"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
@@ -37,10 +26,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+
                 <ImageView
                     android:id="@+id/imageButton4"
                     android:layout_width="386dp"
                     android:layout_height="224dp"
+                    android:onClick="goToFormulario"
                     android:src="@drawable/formula_imagen"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -50,7 +41,10 @@
                     android:id="@+id/textView17"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="goToFormulario"
                     android:text="@string/pedir_form"
+                    android:textColor="@color/nose2"
+                    android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
@@ -68,7 +62,7 @@
                     android:layout_marginTop="40dp"
                     android:text="@string/this_is_a_title"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                    android:textSize="28dp"
+                    android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -83,8 +77,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="220dp"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="16dp"
                     android:layout_marginEnd="16dp"
+                    android:onClick="goToCerti1"
                     android:src="@drawable/curso_1_img"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -93,7 +88,8 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:background="@color/nose">
 
                 <TextView
                     android:id="@+id/textView11"
@@ -102,7 +98,9 @@
                     android:layout_marginStart="32dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="32dp"
+                    android:onClick="goToCerti1"
                     android:text="@string/selection_title1"
+                    android:textColor="@color/backgroung"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -114,7 +112,10 @@
                     android:layout_marginStart="32dp"
                     android:layout_marginTop="12dp"
                     android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="16dp"
+                    android:onClick="goToCerti1"
                     android:text="@string/this_is_a_description1"
+                    android:textColor="@color/nose2"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -130,6 +131,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="220dp"
                     android:layout_marginTop="24dp"
+                    android:onClick="goToCerti2"
                     android:src="@drawable/curso_2_img"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -138,7 +140,8 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:background="@color/nose">
 
                 <TextView
                     android:id="@+id/textView13"
@@ -146,7 +149,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
                     android:layout_marginTop="16dp"
+                    android:onClick="goToCerti2"
                     android:text="@string/selection_title2"
+                    android:textColor="@color/backgroung"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -157,7 +162,11 @@
                     android:layout_marginStart="32dp"
                     android:layout_marginTop="12dp"
                     android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="16dp"
+                    android:onClick="goToCerti2"
                     android:text="@string/this_is_a_description2"
+                    android:textColor="@color/nose2"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView13" />
@@ -173,6 +182,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="220dp"
                     android:layout_marginTop="24dp"
+                    android:onClick="goToCerti3"
                     android:src="@drawable/curso_3_img"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -181,7 +191,8 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="@color/nose">
 
                 <TextView
                     android:id="@+id/textView15"
@@ -190,7 +201,9 @@
                     android:layout_marginStart="32dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="32dp"
+                    android:onClick="goToCerti3"
                     android:text="@string/selection_title3"
+                    android:textColor="@color/backgroung"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -202,7 +215,11 @@
                     android:layout_marginStart="32dp"
                     android:layout_marginTop="12dp"
                     android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="16dp"
+                    android:onClick="goToCerti3"
                     android:text="@string/this_is_a_description3"
+                    android:textColor="@color/nose2"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView15" />
@@ -218,6 +235,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="220dp"
                     android:layout_marginTop="55dp"
+                    android:onClick="goToInfo1"
                     android:src="@drawable/tl_1_img"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -233,6 +251,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="540dp"
                     android:layout_marginTop="6dp"
+                    android:onClick="goToInfo2"
                     android:src="@drawable/cubo_1_img"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -248,8 +267,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="32dp"
+                    android:onClick="goToInfo1"
                     android:text="@string/this_is_a_title2"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
@@ -258,7 +279,8 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:background="@color/nose">
 
                 <TextView
                     android:id="@+id/textView19"
@@ -266,7 +288,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:onClick="goToInfo1"
                     android:text="@string/dec_butom"
+                    android:textColor="@color/nose2"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.14"
                     app:layout_constraintStart_toStartOf="parent"
@@ -283,6 +309,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
                     android:layout_marginTop="16dp"
+                    android:onClick="goToInfo1"
                     android:text="@string/btn_more"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -314,6 +341,7 @@
                     android:layout_marginTop="55dp"
                     android:text="@string/blogs"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -328,6 +356,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="285dp"
                     android:layout_marginTop="16dp"
+                    android:onClick="goToBlog1"
                     android:src="@drawable/blog_1_img"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -347,7 +376,8 @@
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:background="@color/nose">
 
                         <TextView
                             android:id="@+id/textView23"
@@ -356,6 +386,7 @@
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="45dp"
                             android:text="@string/data_published1"
+                            android:textColor="@color/n_backgroung2"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -366,8 +397,10 @@
                             android:layout_marginStart="45dp"
                             android:layout_marginTop="5dp"
                             android:layout_marginEnd="42dp"
+                            android:onClick="goToBlog1"
                             android:text="@string/article_name1"
                             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                            android:textColor="@color/backgroung"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/textView23" />
@@ -384,7 +417,8 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="@color/nose">
 
                 <TextView
                     android:id="@+id/textView24"
@@ -393,7 +427,11 @@
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="16dp"
+                    android:onClick="goToBlog1"
                     android:text="@string/text_teaser1"
+                    android:textColor="@color/nose2"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -408,6 +446,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="465dp"
                     android:layout_marginTop="24dp"
+                    android:onClick="goToBlog2"
                     android:src="@drawable/blog_2_img"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -416,7 +455,8 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="@color/nose">
 
                 <TableLayout
                     android:layout_width="match_parent"
@@ -425,21 +465,6 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
                 </TableLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -455,6 +480,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="45dp"
+                    android:background="@color/nose"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
@@ -464,6 +490,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:text="@string/data_published2"
+                        android:textColor="@color/n_backgroung2"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -474,8 +501,10 @@
                         android:layout_marginStart="42dp"
                         android:layout_marginTop="32dp"
                         android:layout_marginEnd="42dp"
+                        android:onClick="goToBlog2"
                         android:text="@string/article_name1"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="@color/backgroung"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
@@ -485,7 +514,8 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="@color/nose">
 
                 <TextView
                     android:id="@+id/textView27"
@@ -494,7 +524,12 @@
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="16dp"
+                    android:onClick="goToBlog2"
+                    android:shadowColor="@color/nose2"
                     android:text="@string/text_teaser2"
+                    android:textColor="@color/nose2"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -533,5 +568,4 @@
 
         </LinearLayout>
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

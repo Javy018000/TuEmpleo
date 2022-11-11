@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/black_background"
     tools:context=".LogInActivity">
 
     <LinearLayout
@@ -22,11 +22,11 @@
                 android:id="@+id/textContinuar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="270dp"
+                android:layout_marginTop="250dp"
                 android:gravity="center"
-                android:text="Autenticando"
-                android:textColor="@color/purple_700"
-                android:textSize="15dp"
+                android:text="@string/autenticando"
+                android:textColor="@color/white"
+                android:textSize="22dp"
                 android:textStyle="bold|italic"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +37,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="35dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textContinuar" />

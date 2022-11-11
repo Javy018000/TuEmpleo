@@ -98,6 +98,7 @@
     <string name="li_btn">Iniciar sesión</string>
 
     <string name="su_name">Nombres</string>
+    <string name="chat_name">Nombre</string>
     <string name="su_last_name">Apellidos</string>
     <string name="su_email">Correo Electrónico</string>
     <string name="su_passw">Contraseña</string>
@@ -124,5 +125,7 @@
 
     <string name="re2_emple_descap">Trabajar en comercio minorista</string>
     <string name="resul2_emple_descop">Este es uno de los trabajos para personas con discapacidad que efectúas sin problemas, ya que, solo requiere de una formación mínima en cálculo y lenguaje.</string>
+    <string name="autenticando">Autenticando</string>
+    <string name="tl_chat">Chat</string>
 
 </resources>

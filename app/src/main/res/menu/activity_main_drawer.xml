@@ -36,6 +36,10 @@
             android:id="@+id/aboutActivity"
             android:icon="@drawable/ic_info_fachero"
             android:title="@string/lb_titulo_about" />
+        <item
+            android:id="@+id/chatActivity"
+            android:icon="@drawable/ic_chat_fachero"
+            android:title="@string/tl_chat" />
         <!--<item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"

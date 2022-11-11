@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/black_background"
     tools:context=".AboutActivity">
     <TextView
         android:id="@+id/textView1"
@@ -60,7 +60,8 @@
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:background="@color/nose">
 
                         <ImageButton
                             android:id="@+id/imageButton1"
@@ -88,6 +89,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/name_desc1"
+                            android:textColor="@color/nose2"
                             app:layout_constraintEnd_toStartOf="@+id/divider1"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@id/textView3" />
@@ -128,6 +130,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/name_desc2"
+                            android:textColor="@color/nose2"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toEndOf="@+id/divider1"
                             app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -143,7 +146,8 @@
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:background="@color/nose">
 
                         <ImageButton
                             android:id="@+id/imageButton3"
@@ -171,6 +175,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/name_desc3"
+                            android:textColor="@color/nose2"
                             app:layout_constraintEnd_toStartOf="@+id/divider2"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@id/textView7" />

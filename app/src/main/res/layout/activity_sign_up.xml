@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/black_background"
     tools:context=".SignUpActivity">
 
     <LinearLayout
@@ -31,6 +31,8 @@
                 android:hint="@string/su_name"
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -44,6 +46,8 @@
                 android:hint="@string/su_last_name"
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/name" />
 
@@ -57,6 +61,8 @@
                 android:hint="@string/su_email"
                 android:inputType="textEmailAddress"
                 android:minHeight="48dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/lastName" />
 
@@ -71,6 +77,8 @@
                 android:hint="@string/su_passw"
                 android:inputType="textPassword"
                 android:minHeight="48dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/userName" />
 
@@ -94,6 +102,8 @@
                 android:hint="@string/su_passw2"
                 android:inputType="textPassword"
                 android:minHeight="48dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/passw" />
 
@@ -107,6 +117,8 @@
                 android:hint="@string/su_phone"
                 android:inputType="phone"
                 android:minHeight="48dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/confirPassw" />
 

@@ -109,4 +109,9 @@
         android:id="@+id/continuePhoneActivity"
         android:name="com.example.tuempleo.ContinuePhoneActivity"
         android:label="ContinuePhoneActivity" />
+    <activity
+        android:id="@+id/chatActivity"
+        android:name="com.example.tuempleo.ChatActivity"
+        android:label="activity_chat"
+        tools:layout="@layout/activity_chat" />
 </navigation>

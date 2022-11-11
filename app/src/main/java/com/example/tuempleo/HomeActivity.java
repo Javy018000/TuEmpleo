@@ -6,13 +6,25 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RatingBar;
+import android.widget.Toast;
 
 public class HomeActivity extends AppCompatActivity {
+    private RatingBar ratingBar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        ratingBar= (RatingBar)findViewById(R.id.estrellas);
+        ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+            @Override
+            public void onRatingChanged(RatingBar ratingBar, float rating, boolean b) {
+                Toast.makeText(HomeActivity.this,"Gracias por calificarnos con"+rating,Toast.LENGTH_LONG).show();
+            }
+        });
     }
     public void goToFormulario(View view){
         Intent intent= new Intent(this,ResultFormActivity.class);

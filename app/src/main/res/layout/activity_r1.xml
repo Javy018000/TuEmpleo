@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/black_background"
     tools:context=".R1Activity">
 
     <LinearLayout
@@ -32,6 +32,7 @@
                     android:layout_marginStart="32dp"
                     android:layout_marginTop="24dp"
                     android:text="@string/resul_message"
+                    android:textColor="@color/backgroung"
                     android:textStyle="italic"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -48,6 +49,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
                     android:text="@string/re_empleo"
+                    android:textColor="@color/white"
                     android:textSize="24sp"
                     android:textStyle="bold|italic"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -80,8 +82,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="32dp"
-                    android:background="#80E6D7"
+                    android:background="@color/nose"
                     android:text="@string/resul_emple_descop"
+                    android:textColor="@color/nose2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -99,6 +102,7 @@
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="28dp"
                     android:text="@string/resul_more"
+                    android:textColor="@color/n_backgroung2"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -123,7 +127,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/re1_empleo"
-                    android:textColor="@color/teal_700"
+                    android:textColor="@color/white"
                     android:textSize="24sp"
                     android:textStyle="bold|italic"
                     app:layout_constraintEnd_toEndOf="parent"
