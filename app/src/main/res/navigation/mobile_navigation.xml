@@ -109,4 +109,9 @@
         android:id="@+id/continuePhoneActivity"
         android:name="com.example.tuempleo.ContinuePhoneActivity"
         android:label="ContinuePhoneActivity" />
+    <activity
+        android:id="@+id/downloadReportsActivity"
+        android:name="com.example.tuempleo.DownloadReportsActivity"
+        android:label="activity_download_reports"
+        tools:layout="@layout/activity_download_reports" />
 </navigation>

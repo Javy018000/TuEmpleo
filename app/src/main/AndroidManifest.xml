@@ -3,7 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.tuempleo">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+
 
     <application
         android:allowBackup="true"
@@ -15,6 +18,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TuEmpleo"
         tools:targetApi="31">
+        <activity
+            android:name=".DownloadReportsActivity"
+            android:exported="false" />
         <activity
             android:name=".IsNotLoggingActivity"
             android:exported="false" />
@@ -45,9 +51,7 @@
         <activity
             android:name=".AboutActivity"
             android:exported="false" />
-        <activity
-            android:name=".MainActivity2"
-            android:exported="false" />
+
         <activity
             android:name=".HomeActivity"
             android:exported="false" />

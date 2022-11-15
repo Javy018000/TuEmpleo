@@ -125,4 +125,11 @@
     <string name="re2_emple_descap">Trabajar en comercio minorista</string>
     <string name="resul2_emple_descop">Este es uno de los trabajos para personas con discapacidad que efectúas sin problemas, ya que, solo requiere de una formación mínima en cálculo y lenguaje.</string>
 
+    //
+    <string name="report_download_title">Selecciona una opción para descargar los reportes</string>
+    <string name="rbtn_general">Reporte general</string>
+    <string name="rbtn_user">Reporte usuario</string>
+    <string name="report_download_button">Descargar en pdf</string>
+    <string name="report_text_correo">Correo electrónico del usuario</string>
+
 </resources>
