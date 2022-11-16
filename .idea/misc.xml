@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/drawable/background.xml" value="0.171" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/drawable/black_background.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/drawable/btn_background.xml" value="0.1705" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/drawable/ic_baseline_translate_24.xml" value="0.1" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/drawable/ic_formulario_fachero.xml" value="0.1795" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/drawable/ic_home_fachero.xml" value="0.1795" />
@@ -21,7 +22,7 @@
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_main.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_main2.xml" value="0.1" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_menu_principal.xml" value="0.1" />
-        <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_otp.xml" value="0.22" />
+        <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_otp.xml" value="0.1921182266009852" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_otp_login.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_r1.xml" value="0.22" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_r2.xml" value="0.17552083333333332" />

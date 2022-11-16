@@ -54,16 +54,17 @@
         android:id="@+id/verify_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:backgroundTint="@color/black"
         android:onClick="callNextScreenFromOTP"
+        android:padding="8dp"
         android:text="@string/otp_messageButton"
         android:textColor="@color/white"
-        android:textStyle="bold"
-        android:layout_margin="30dp"
         android:textSize="20sp"
-        android:padding="8dp"
-        android:backgroundTint="@color/black"
+        android:textStyle="bold"
         android:transitionName="transition_OTP_screen"
-        tools:ignore="OnClick" />
+        tools:ignore="OnClick"
+        />
 
     <ProgressBar
         android:id="@+id/progress_bar"

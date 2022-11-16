@@ -7,6 +7,15 @@
     android:background="@drawable/n_background"
     android:onClick="goCerty1"
     tools:context=".ui.home.HomeFragment">
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <ScrollView
         android:layout_width="409dp"
         android:layout_height="729dp"
