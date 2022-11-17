@@ -10,40 +10,40 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class AdapterRVMensajes extends RecyclerView.Adapter <AdapterRVMensajes.MensajeHolder> {
-    private List<MensajeVO>lstMensaje;
+public class AdapterRVMensajes extends RecyclerView.Adapter<AdapterRVMensajes.MensajeHolder> {
+    private List<MensajeVO> lstMensajes;
 
-    public AdapterRVMensajes(List<MensajeVO> lstMensaje) {
-        this.lstMensaje = lstMensaje;
+    public AdapterRVMensajes(List<MensajeVO> lstMensajes) {
+        this.lstMensajes = lstMensajes;
     }
 
     @NonNull
     @Override
     public MensajeHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View mView= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_message, viewGroup, false);
+        View mView = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_message, viewGroup, false);
         return new MensajeHolder(mView);
-
     }
 
     @Override
     public void onBindViewHolder(@NonNull MensajeHolder mensajeHolder, int i) {
-        mensajeHolder.tvName.setText(lstMensaje.get(i).getName());
-        mensajeHolder.tvMenssage.setText(lstMensaje.get(i).getMessage());
+        mensajeHolder.tvName.setText(lstMensajes.get(i).getName());
+        mensajeHolder.tvMessage.setText(lstMensajes.get(i).getMessage());
     }
 
     @Override
     public int getItemCount() {
-        return lstMensaje.size();
+        return lstMensajes.size();
     }
 
     class MensajeHolder extends RecyclerView.ViewHolder{
         private TextView tvName;
-        private  TextView tvMenssage;
+        private TextView tvMessage;
 
         public MensajeHolder(@NonNull View itemView) {
             super(itemView);
-            tvName=itemView.findViewById(R.id.etName);
-            tvMenssage=itemView.findViewById(R.id.etMensaje);
+            tvName = itemView.findViewById(R.id.tvName);
+            tvMessage = itemView.findViewById(R.id.tvMessage);
         }
     }
 }
+

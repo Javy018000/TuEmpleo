@@ -2,7 +2,7 @@ package com.example.tuempleo;
 
 public class MensajeVO {
     private String name;
-    private  String message;
+    private String message;
 
     public String getName() {
         return name;

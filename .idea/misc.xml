@@ -4,31 +4,19 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/drawable/background.xml" value="0.171" />
-        <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/drawable/black_background.xml" value="0.4466666666666667" />
-        <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/drawable/btn_background.xml" value="0.1705" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/drawable/ic_baseline_translate_24.xml" value="0.1" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/drawable/ic_formulario_fachero.xml" value="0.1795" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/drawable/ic_home_fachero.xml" value="0.1795" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/drawable/ic_menu_book__fachero.xml" value="0.1795" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.171" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/drawable/n_background.xml" value="0.171" />
-        <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_about.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_chat.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_continue_phone.xml" value="0.14130434782608695" />
-        <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_home.xml" value="0.13072148952676493" />
-        <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_is_logging.xml" value="0.14130434782608695" />
-        <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_is_not_logging.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_about.xml" value="0.1" />
+        <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_log_in.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_main.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_main2.xml" value="0.1" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_menu_principal.xml" value="0.1" />
-        <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_otp.xml" value="0.1921182266009852" />
-        <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_otp_login.xml" value="0.14130434782608695" />
-        <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_r1.xml" value="0.22" />
-        <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_r2.xml" value="0.17552083333333332" />
-        <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_r3.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_reporte.xml" value="0.1" />
-        <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_result_form.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_sign_up.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_tr.xml" value="0.1" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_traduc.xml" value="0.1" />
@@ -46,25 +34,35 @@
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/fragment_reporte2.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/fragment_slideshow.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/fragment_translate.xml" value="0.1" />
-        <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/item_message.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/nav_header_main.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/menu/activity_main_drawer.xml" value="0.5" />
         <entry key="..\:/Users/erick/AndroidStudioProjects/TuEmpleo/app/src/main/res/menu/main.xml" value="0.22" />
+        <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/drawable/black_background.xml" value="0.1115" />
+        <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_chat.xml" value="0.6" />
+        <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_continue_phone.xml" value="0.25" />
+        <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_download_reports.xml" value="0.264" />
         <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_home.xml" value="0.22644927536231885" />
-        <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_log_in.xml" value="0.22644927536231885" />
+        <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_is_logging.xml" value="0.2246376811594203" />
+        <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_is_not_logging.xml" value="0.2916666666666667" />
+        <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_log_in.xml" value="0.16363636363636364" />
+        <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_main.xml" value="0.2246376811594203" />
         <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_menu_principal.xml" value="0.22644927536231885" />
+        <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_otp.xml" value="0.264" />
+        <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_otp_login.xml" value="0.2" />
+        <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_phone.xml" value="0.2246376811594203" />
         <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_pre_formu.xml" value="0.22010869565217392" />
         <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_r1.xml" value="0.12" />
         <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_r2.xml" value="0.264" />
         <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_r3.xml" value="0.22056159420289856" />
-        <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_reporte.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_reporte.xml" value="0.264" />
         <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_result_form.xml" value="0.4" />
-        <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_sign_up.xml" value="0.22644927536231885" />
+        <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_sign_up.xml" value="0.264" />
         <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/activity_tr.xml" value="0.22010869565217392" />
         <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/content_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/fragment_formulario.xml" value="0.23369565217391305" />
-        <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/fragment_home.xml" value="0.189498618239242" />
+        <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/fragment_home.xml" value="0.4" />
         <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/fragment_login.xml" value="0.22644927536231885" />
+        <entry key="..\:/Users/javi1/AndroidStudioProjects/TuEmpleo/app/src/main/res/layout/item_message.xml" value="0.25" />
       </map>
     </option>
   </component>
