@@ -114,4 +114,9 @@
         android:name="com.example.tuempleo.ChatActivity"
         android:label="activity_chat"
         tools:layout="@layout/activity_chat" />
+    <activity
+        android:id="@+id/downloadReportsActivity"
+        android:name="com.example.tuempleo.DownloadReportsActivity"
+        android:label="activity_download_reports"
+        tools:layout="@layout/activity_download_reports" />
 </navigation>

@@ -296,7 +296,7 @@ public class DownloadReportsActivity extends AppCompatActivity {
     }
 
     private void requestPermissions() {
-        ActivityCompat.requestPermissions(this, new String[]{WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE}, 200);
+        ActivityCompat.requestPermissions(this, new String[]{MANAGE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE}, 200);
     }
 
     @SuppressLint("MissingSuperCall")
