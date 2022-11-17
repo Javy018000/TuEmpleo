@@ -128,4 +128,11 @@
     <string name="autenticando">Autenticando</string>
     <string name="tl_chat">Chat</string>
 
+    //
+    <string name="report_download_title">Selecciona una opción para descargar los reportes</string>
+    <string name="rbtn_general">Reporte general</string>
+    <string name="rbtn_user">Reporte usuario</string>
+    <string name="report_download_button">Descargar en pdf</string>
+    <string name="report_text_correo">Correo electrónico del usuario</string>
+
 </resources>

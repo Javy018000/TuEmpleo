@@ -128,7 +128,7 @@ public class LogInActivity extends AppCompatActivity {
         finish();
     }
 
-    public void obtenerDatos(){
+    private void obtenerDatos(){
 
 
         mFirestore.collection("Usuario").document(email.getText().toString().trim()).get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
@@ -147,7 +147,6 @@ public class LogInActivity extends AppCompatActivity {
                             }
                             else{
                                 Toast.makeText(getApplicationContext(), "La contraseña es incorrecta", Toast.LENGTH_SHORT).show();
-                                //mTextViewResponse.setText("Bases de datos:" + documentSnapshot.getString("Contraseña") + "\nEditText:" + contraseña);
                             }
 
 
@@ -165,4 +164,5 @@ public class LogInActivity extends AppCompatActivity {
             }
         });
     }
+
 }
